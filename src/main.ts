@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+// @ts-expect-error we don't have type declarations for the views
 import App from './App.vue'
 import router from './router';
 
