@@ -1,0 +1,8 @@
+{
+  "name": "megalabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "10300058"
+}

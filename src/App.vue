@@ -1,12 +1,9 @@
 <template>
-  <div class="container mx-auto p-4">
-    <h1 class="text-2xl font-bold mb-4">Mi Aplicación Vue</h1>
-    <Button>Click me!</Button>
-    <TableComp />
-  </div>
+  <ion-app>
+    <ion-router-outlet />
+  </ion-app>
 </template>
 
-<script setup>
-import { Button } from '@/components/ui/button'
-import TableComp from '@/components/layout/TableComp.vue'
+<script setup lang="ts">
+import { IonApp, IonRouterOutlet } from '@ionic/vue';
 </script>
