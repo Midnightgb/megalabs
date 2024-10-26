@@ -1,5 +1,12 @@
 {
   "appId": "tech.javm.app",
   "appName": "megalabs",
-  "webDir": "dist"
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "iosScheme": "ionic"
+  },
+  "ios": {
+    "contentInset": "always"
+  }
 }
