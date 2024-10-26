@@ -30,3 +30,18 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+
+
+# android
+/platforms/android/
+/android/
+*.apk
+*.aab
+
+# ios
+/platforms/ios/
+/ios/
+*.ipa
+*.xcodeproj
+*.xcworkspace
+/Pods/
