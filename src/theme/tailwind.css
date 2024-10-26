@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajustes para que Tailwind funcione bien con Ionic */
+@layer base {
+  :root {
+    --ion-color-primary: theme('colors.blue.500');
+    --ion-color-secondary: theme('colors.gray.500');
+    /* Puedes agregar más variables de color de Ionic aquí */
+  }
+}
+

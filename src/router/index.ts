@@ -6,11 +6,20 @@ import TabsPage from '../views/TabsPage.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/tabs/tab1'
+    redirect: '/login'
+  },
+  {
+    path: '/login',
+    component: () => import('@/views/LoginPage.vue')
+  },
+  {
+    path: '/forgot-password',
+    component: () => import('@/views/ForgotPasswordPage.vue')
   },
   {
     path: '/tabs/',
     component: TabsPage,
+    meta: { requiresAuth: false },
     children: [
       {
         path: '',
@@ -27,7 +36,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tab3',
         component: () => import('@/views/Tab3Page.vue')
-      }
+      },
     ]
   },
   {
