@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import TabsPage from '../views/TabsPage.vue'
+import TabsPage from '../views/TabsPage.vue';
 
+// Definición de rutas
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -13,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: 'tab1'
       },
       {
         path: 'tab1',
@@ -28,12 +29,16 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Tab3Page.vue')
       }
     ]
+  },
+  {
+    path: '/home',
+    component: () => import('@/views/HomePage.vue')    
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes
-})
+});
 
-export default router
+export default router;
