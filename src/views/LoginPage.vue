@@ -70,7 +70,7 @@ ion-content {
 
 
 h1 {
-  margin-top: 2rem;
+  margin-top: 15px;
   margin-bottom: 15px;
   font-size: 36px;
   font-weight: 700;
