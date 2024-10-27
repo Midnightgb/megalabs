@@ -7,7 +7,7 @@
                 </div>
                 <div class="container-2">
                     <div class="text-container">
-                        <h2 class="large-text">Megalabs</h2> 
+                        <img src="@/assets/img/megalabs_logo.svg" alt="logo-megalabs" class="brightness-0 invert">
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                 :key="index" 
                 class="card" 
                 :class="{ 'gastro-card': card.title === 'GASTRO' }" 
-                @click="handleCardClick(card.title)">
+                @click="handleCardClick(card)">
                 <ion-card-header>
                     <div 
                         class="circular-container" 
@@ -52,15 +52,21 @@ import medicinaImg from '@img/medicina.jpeg';
 
 const router = useRouter();
 
-const cards = [
-    { title: 'DOLOR', image: dolorImg },
-    { title: 'GASTRO', image: gastroImg },
-    { title: 'GINECO - UROLOGIA', image: urologiaImg },
-    { title: 'PEDIATRA - RESPIRATORIA', image: respirarImg },
-    { title: 'DERMATOLOGIA', image: dermaImg },
-    { title: 'HIDRISAGE', image: hidrisageImg },
-    { title: 'OFTAMOLOGIA', image: oftamologiaImg },
-    { title: 'MEDICINA GENERAL', image: medicinaImg },
+interface Card {
+  title: string;
+  image: string;
+  path?: string;
+}
+
+const cards: Card[] = [
+    { title: 'DOLOR', image: dolorImg, path: '/home/dolor' },
+    { title: 'GASTRO', image: gastroImg, path: '/home/gastro' },
+    { title: 'GINECO - UROLOGIA', image: urologiaImg, path: '/home/urologia' },
+    { title: 'PEDIATRA - RESPIRATORIA', image: respirarImg, path: '/home/respiratoria' },
+    { title: 'DERMATOLOGIA', image: dermaImg, path: '/home/dermatologia' },
+    { title: 'HIDRISAGE', image: hidrisageImg, path: '/home/hidrisage' },
+    { title: 'OFTAMOLOGIA', image: oftamologiaImg, path: '/home/oftamologia' },
+    { title: 'MEDICINA GENERAL', image: medicinaImg, path: '/home/medicina' },
 ];
 
 const circleColors = [
@@ -74,9 +80,9 @@ const circleColors = [
     'rgb(193, 201, 214)',
 ];
 
-const handleCardClick = (title: string) => {
-    if (title === 'GASTRO') {
-        console.log('Gastro');
+const handleCardClick = (card: Card) => {
+    if (card.path) {
+        router.push(card.path);
     }
 };
 
@@ -134,7 +140,13 @@ const handleSignOut = () => {
 .text-container {
   display: flex;
   flex-direction: column; 
-  align-items: center; 
+  align-items: center;
+  min-height: 50px; /* Añadir altura mínima */
+}
+
+.text-container img {
+  width: 200px; /* O el tamaño que necesites */
+  height: auto;
 }
 
 .large-text {

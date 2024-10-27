@@ -1,5 +1,5 @@
 <template>
-  <ion-app>
+  <ion-app class="select-none">
     <ion-router-outlet />
   </ion-app>
 </template>
