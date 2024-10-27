@@ -118,6 +118,7 @@ const handleSignOut = () => {
     justify-content: flex-end;
 }
 
+
 .btn-salir {
     padding: 10px 70px;
     background-color: white; 
@@ -145,7 +146,7 @@ const handleSignOut = () => {
 }
 
 .text-container img {
-  width: 200px; /* O el tamaño que necesites */
+  width: 400px !important; /* Usa !important para forzar el tamaño, pero usa esto con precaución */
   height: auto;
 }
 
@@ -238,10 +239,10 @@ const handleSignOut = () => {
   .card {
     width: calc(33% - 16px); 
   }
-
-  .large-text {
-    font-size: 50px; /* Aumentado para pantallas medianas */
+  .text-container img {
+    width: 300px !important;
   }
+
 }
 
 @media (max-width: 580px) {
@@ -262,9 +263,10 @@ const handleSignOut = () => {
     width: auto;
   }
 
-  .large-text {
-    font-size: 28px; /* Aumentado desde 24px a 28px */
+  .text-container img {
+    width: 200px !important;
   }
+
 
   .container-2 {
     order: 1;
@@ -276,9 +278,6 @@ const handleSignOut = () => {
     align-items: flex-start;
   }
 
-  .large-text {
-    font-size: 30px;
-  }
 
   .btn-salir {
     padding: 4px 15px;
@@ -299,6 +298,11 @@ const handleSignOut = () => {
 @media (max-width: 480px) {
   .card {
     width: 100%;
+  }
+
+  .text-container img {
+    width: 160px !important;
+    margin-top: 8px
   }
 }
 </style>
