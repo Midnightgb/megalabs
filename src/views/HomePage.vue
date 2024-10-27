@@ -1,11 +1,11 @@
 //src/views/HomePage.vue
 <template>
     <ion-page>
-        <MegaHeader />
+        <HomeSpecialties />
     </ion-page>
 </template>
 
 <script setup lang="ts">
-import MegaHeader from '@/components/MegaHeader.vue';
+import HomeSpecialties from '@/components/HomeSpecialties.vue';
 </script>
 
