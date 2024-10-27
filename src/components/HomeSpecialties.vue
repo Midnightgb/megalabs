@@ -81,7 +81,6 @@ const handleCardClick = (title: string) => {
 
 
 <style scoped>
-/* Estilos Globales */
 .content {
   background-color: white; 
   --ion-background-color: white; 
@@ -213,7 +212,7 @@ const handleCardClick = (title: string) => {
 
 @media (max-width: 480px) {
   .card {
-    width: 100%; /* La tarjeta ocupará toda la fila en pantallas pequeñas */
+    width: 100%;
   }
 }
 
