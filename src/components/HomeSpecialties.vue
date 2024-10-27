@@ -192,20 +192,35 @@ const handleSignOut = () => {
 }
 
 .circular-image-container {
-  width: 100%; 
-  height: 100%; 
-  border-radius: 50%; 
-  overflow: hidden; 
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circular-image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px 8px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }
 
 .circular-image-container img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.9);
 }
+
 
 .card-content {
   display: flex; 
