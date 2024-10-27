@@ -37,6 +37,7 @@ const handleLogin = () => {
     alert('Login exitoso'); // Aquí se puede hacer el login real
   }else{
     credentialsIncorrect.value = true;
+    console.log("Login incorrecto " + credentialsIncorrect.value);
   }
     
 };
@@ -84,7 +85,8 @@ h3 {
 }
 
 form {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
   .forgot-password-link {
     text-decoration: none;
@@ -98,11 +100,11 @@ form {
   }
 }
 
+
+
 .credentials-incorrect{
   background-color: #ffe3e2;
   padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   border-radius: 10px;
   border: 2px solid #ff8a80;
   margin-top: 0.5rem;

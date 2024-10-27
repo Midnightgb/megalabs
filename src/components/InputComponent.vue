@@ -4,7 +4,8 @@
         <input 
             :type="type" 
             :value="modelValue"
-            @input="$emit('update:modelValue', $event.target.value)"
+            :class="{ 'input-error': isError }"
+            @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
             @focus="focused = true" 
             @blur="onBlur"
         >
@@ -18,15 +19,20 @@ const props = defineProps({
     label: String,
     type: {
         type: String,
-        default: 'text'
+        default: 'text',
     },
     modelValue: {
         type: String,
         required: true
+    },
+    isError: {
+        type: Boolean,
+        default: false,
     }
 });
+console.log("error en input " + props.isError);
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(['update:modelValue', 'update:isError']);
 
 // Crear una propiedad reactiva para el enfoque
 const focused = ref(false);
@@ -34,6 +40,7 @@ const focused = ref(false);
 const onBlur = (event: any) => {
     const value = event.target.value;
     focused.value = !!value;
+    emit('update:isError', false);
     console.log(focused.value);
 }
 </script>
@@ -69,6 +76,9 @@ const onBlur = (event: any) => {
         background: none;
         z-index: 1;
         color: black;
+        &.input-error {
+            border-color: #ff0000;
+        }
     }
 
     input:focus {
