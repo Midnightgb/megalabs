@@ -1,8 +1,8 @@
 <template>
   <swiper
+    :space-between="30"
     :modules="modules"
     :slides-per-view="1"
-    :pagination="{ clickable: true }"
     :autoplay="autoplay"
     :navigation="true"
     class="w-full h-full"
@@ -12,7 +12,7 @@
         <img 
           :src="slide.image" 
           :alt="slide.title"
-          class="w-full h-full object-cover"
+          class="absolute top-0 left-0 w-full h-full object-contain"
         />
         <div 
           v-if="slide.title" 
@@ -35,6 +35,27 @@ import type { CarouselProps } from './index';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+
+const swiperBreakpoints = {
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 10
+  },
+  768: {
+    slidesPerView: 1,
+    spaceBetween: 20
+  },
+  1024: {
+    slidesPerView: 1,
+    spaceBetween: 30
+  }
+}
+
+const getResponsiveImage = (slide: CarouselProps['slides'][number]) => {
+  if(window.innerWidth < 1024) return slide.image;
+  if(window.innerWidth < 768) return slide.image;
+  return slide.image;
+}
 
 withDefaults(defineProps<CarouselProps>(), {
   autoplay: () => ({
