@@ -6,6 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import MegaHeader from '@/components/MegaHeader.vue'; 
+import MegaHeader from '@/components/MegaHeader.vue';
 </script>
 
