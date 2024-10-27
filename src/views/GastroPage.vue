@@ -7,6 +7,7 @@
             v-for="button in buttonimgs" 
             :key="button.alt" 
             class="img-btn"
+            @click="handleButtonClick(button)"
           >
             <img :src="button.img" :alt="button.alt">
           </button>
@@ -21,6 +22,9 @@
 
 <script setup lang="ts">
 import { IonPage, IonContent } from '@ionic/vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 interface ButtonsImg{
   img: string;
@@ -43,28 +47,33 @@ import productos from '@img/gastroHome/productos.png';
 
 
 const buttonimgs: ButtonsImg[] = [
-    { alt: 'DOLOR', img: dexgstrol, path: '/home/dolor' },
-    { alt: 'GASTRO', img: sansflu, path: '/home/gastro' },
-    { alt: 'GINECO - UROLOGIA', img: pregesix, path: '/home/urologia' },
-    { alt: 'PEDIATRA - RESPIRATORIA', img: lunarium, path: '/home/respiratoria' },
-    { alt: 'DERMATOLOGIA', img: combispas, path: '/home/dermatologia' },
-    { alt: 'HIDRISAGE', img: kirruz, path: '/home/hidrisage' },
-    { alt: 'OFTAMOLOGIA', img: neocholal, path: '/home/oftamologia' },
-    { alt: 'MEDICINA GENERAL', img: enterex, path: '/home/medicina' },
-    { alt: 'MEDICINA GENERAL', img: lactipan, path: '/home/medicina' },
-    { alt: 'MEDICINA GENERAL', img: glutapak, path: '/home/medicina' },
-    { alt: 'MEDICINA GENERAL', img: phlebodia, path: '/home/medicina' },
-    { alt: 'MEDICINA GENERAL', img: productos, path: '/home/medicina' },
+    { alt: 'dexgstrol', img: dexgstrol, path: '/home/gastro/dexgstrol' },
+    { alt: 'sansflu', img: sansflu, path: '/home/gastro/sansflu' },
+    { alt: 'pregesix', img: pregesix, path: '/home/gastro/pregesix' },
+    { alt: 'lunarium', img: lunarium, path: '/home/gastro/lunarium' },
+    { alt: 'combispas', img: combispas, path: '/home/gastro/combispas' },
+    { alt: 'kirruz', img: kirruz, path: '/home/gastro/kirruz' },
+    { alt: 'neocholal', img: neocholal, path: '/home/gastro/neocholal' },
+    { alt: 'enterex', img: enterex, path: '/home/gastro/enterex' },
+    { alt: 'lactipan', img: lactipan, path: '/home/gastro/lactipan' },
+    { alt: 'glutapak', img: glutapak, path: '/home/gastro/glutapak' },
+    { alt: 'phlebodia', img: phlebodia, path: '/home/gastro/phlebodia' },
+    { alt: 'productos', img: productos, path: '/home/gastro/productos' },
 ];
 
-
+const handleButtonClick = (button: ButtonsImg) => {
+  if (button.path) {
+    console.log(button.path);
+    router.push(button.path);
+  }
+};
 </script>
 
 
 <style scoped>
 .bg-img {
   background-color: #fafbfd;
-  /* background-image: url('@/assets/bg.jpg'); */
+  background-image: url('@img/general/desktop/webp/BOOK GAS 0924-2_page78_image1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

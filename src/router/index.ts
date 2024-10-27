@@ -33,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'gastro',
         // @ts-expect-error we don't have type declarations for the views
-        component: () => import('@/views/GastroPage.vue')
+        component: () => import('@/views/GastroPage.vue'),
       }
     ]
   },
