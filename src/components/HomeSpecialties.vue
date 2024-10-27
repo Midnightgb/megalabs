@@ -142,11 +142,11 @@ const handleSignOut = () => {
   display: flex;
   flex-direction: column; 
   align-items: center;
-  min-height: 50px; /* Añadir altura mínima */
+  min-height: 50px;
 }
 
 .text-container img {
-  width: 400px !important; /* Usa !important para forzar el tamaño, pero usa esto con precaución */
+  width: 400px !important;
   height: auto;
 }
 
