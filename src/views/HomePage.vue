@@ -1,11 +1,11 @@
 //src/views/HomePage.vue
 <template>
     <ion-page>
-        <HomeSpecialties />
+        <router-view></router-view>
     </ion-page>
 </template>
 
 <script setup lang="ts">
-import HomeSpecialties from '@/components/HomeSpecialties.vue';
+import { IonPage } from '@ionic/vue';
 </script>
 

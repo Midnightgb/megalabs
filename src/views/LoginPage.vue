@@ -24,7 +24,9 @@
 import { IonPage, IonContent, IonButton } from '@ionic/vue';
 import { ref } from 'vue';
 
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
 
 const credentialsIncorrect = ref(false);
 const email = ref('')
@@ -34,6 +36,7 @@ const handleLogin = () => {
   // Aquí iría la lógica de inicio de sesión
   if (email.value === 'tinta' && password.value === 'tinta') {
     console.log('Login attempt', { email: email.value, password: password.value });
+    router.push('/home');
     alert('Login exitoso'); // Aquí se puede hacer el login real
   }else{
     credentialsIncorrect.value = true;
