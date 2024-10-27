@@ -1,116 +1,128 @@
 <template>
   <ion-page>
-    <ion-content :fullscreen="true" class="ion-padding">
-      <div class="flex min-h-screen items-center justify-center px-4">
-        <div class="w-full max-w-md space-y-8">
-          <!-- Logo container -->
-          <div class="text-center">
-            <img 
-              src="@/assets/img/logo-megalabs-footer.png" 
-              alt="Logo" 
-              class="mx-auto h-24 w-auto"
-            />
-            <h1 class="mt-6 text-2xl font-bold tracking-tight text-gray-900">
-              Bienvenido
-            </h1>
-            <p class="mt-2 text-sm text-gray-600">
-              Inicia sesión para continuar
-            </p>
-          </div>
-
-          <!-- Form container -->
-          <div class="mt-8 space-y-6">
-            <div class="space-y-4">
-              <ion-item class="rounded-lg bg-gray-50">
-                <ion-label position="floating" class="text-gray-700">
-                  Email
-                </ion-label>
-                <ion-input 
-                  type="email" 
-                  v-model="email"
-                  class="!mt-2"
-                ></ion-input>
-              </ion-item>
-
-              <ion-item class="rounded-lg bg-gray-50">
-                <ion-label position="floating" class="text-gray-700">
-                  Contraseña
-                </ion-label>
-                <ion-input 
-                  type="password" 
-                  v-model="password"
-                  class="!mt-2"
-                ></ion-input>
-              </ion-item>
-            </div>
-
-            <ion-button 
-              expand="block" 
-              @click="handleLogin"
-              class="!mt-8 h-12 !font-semibold"
-            >
-              Iniciar Sesión
-            </ion-button>
-
-            <div class="flex flex-col items-center space-y-4">
-              <a 
-                href="#" 
-                class="text-sm font-medium text-blue-600 hover:text-blue-500"
-              >
-                ¿Olvidaste tu contraseña?
-              </a>
-              <p class="text-sm text-gray-600">
-                ¿No tienes cuenta? 
-                <a href="#" class="font-medium text-blue-600 hover:text-blue-500">
-                  Regístrate aquí
-                </a>
-              </p>
-            </div>
-          </div>
+    <ion-content class="ion-padding">
+      <div class="padding-all centered-container">
+        <img src="@/assets/img/logo-megalabs-green.png" alt="Logo" class="my-8">
+        <h1><strong></strong>Bienvenido</h1>
+        <h3>Inicia sesión para continuar</h3>
+        <div class="credentials-incorrect" v-if="credentialsIncorrect">
+          <h5>Contraseña incorrecta</h5>
+          <p>Por favor, comprueba tus credenciales e intenta nuevamente.</p>
         </div>
+        <form @submit.prevent="handleLogin">
+          <InputComponent label="Correo electrónico" type="text" v-model="email"/>
+          <InputComponent label="Contraseña" type="password" v-model="password"/>
+          <a href="#" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
+          <ion-button expand="block" color="success" type="submit" >Iniciar Sesión</ion-button>
+        </form>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonContent, IonItem, IonLabel, IonInput, IonButton } from '@ionic/vue';
+import { IonPage, IonContent, IonButton } from '@ionic/vue';
 import { ref } from 'vue';
+
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-const email = ref('');
-const password = ref('');
+
+const credentialsIncorrect = ref(false);
+const email = ref('')
+const password = ref('')
 
 const handleLogin = () => {
-  console.log('Email:', email.value);
-  console.log('Password:', password.value);
-  router.push('/tabs/tab1');
+  // Aquí iría la lógica de inicio de sesión
+  if (email.value === 'tinta' && password.value === 'tinta') {
+    console.log('Login attempt', { email: email.value, password: password.value });
+    router.push('/home');
+    alert('Login exitoso'); // Aquí se puede hacer el login real
+  }else{
+    credentialsIncorrect.value = true;
+    console.log("Login incorrecto " + credentialsIncorrect.value);
+  }
+    
 };
+
+import InputComponent from '@/components/InputComponent.vue';
 </script>
 
-<style>
-/* Ajustes específicos para los componentes de Ionic */
-ion-item {
-  --background: transparent;
-  --border-color: theme('colors.gray.200');
-  --border-width: 1px;
-  --border-radius: 0.5rem;
-  --padding-start: 1rem;
-  --padding-end: 1rem;
+<style lang="scss" scoped>
+ion-content {
+  --background: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.padding-all {
+  max-width: 500px;
+  width: 90%;
+}
+
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+
+h3 {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+form {
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
+  .forgot-password-link {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+  }
 }
 
-ion-button {
-  --background: theme('colors.blue.600');
-  --background-hover: theme('colors.blue.700');
-  --border-radius: 0.5rem;
-}
 
-/* Asegurarse de que los inputs tengan el espaciado correcto */
-ion-input {
-  --padding-start: 0;
-  --padding-top: 0.5rem;
-  --padding-bottom: 0.5rem;
-}
+
+.credentials-incorrect{
+  background-color: #ffe3e2;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ff8a80;
+  margin-top: 0.5rem;
+  width: 100%;
+
+  h5 {
+    color: #555d65;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  p{
+    color: #555d65;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+} 
 </style>

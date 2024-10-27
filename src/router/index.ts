@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 // @ts-expect-error we don't have type declarations for the views
-import TabsPage from '@/views/TabsPage.vue'
+import HomePage from '@/views/HomePage.vue'
 
+// Definición de rutas
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -10,6 +11,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/login',
+    name: 'login',
     // @ts-expect-error we don't have type declarations for the views
     component: () => import('@/views/LoginPage.vue')
   },
@@ -19,36 +21,31 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/ForgotPasswordPage.vue')
   },
   {
-    path: '/tabs/',
-    component: TabsPage,
+    path: '/home',
+    component: HomePage,
     meta: { requiresAuth: false },
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
-      },
-      {
-        path: 'tab1',
         // @ts-expect-error we don't have type declarations for the views
-        component: () => import('@/views/Tab1Page.vue')
+        component: () => import('@/components/HomeSpecialties.vue')
       },
       {
-        path: 'tab2',
+        path: 'gastro',
         // @ts-expect-error we don't have type declarations for the views
         component: () => import('@/views/GastroPage.vue')
-      },
-      {
-        path: 'tab3',
-        // @ts-expect-error we don't have type declarations for the views
-        component: () => import('@/views/Tab3Page.vue')
-      },
+      }
     ]
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/home'
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes
-})
+});
 
-export default router
+export default router;
