@@ -15,6 +15,10 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@img': path.resolve(__dirname, './src/assets/img'),
+      '@gastro-desktop': path.resolve(__dirname, './src/assets/img/gastro/desktop'),
+      '@gastro-tablet': path.resolve(__dirname, './src/assets/img/gastro/tablet'),
+      '@gastro-mobile': path.resolve(__dirname, './src/assets/img/gastro/mobile'),
+      '@common': path.resolve(__dirname, './src/components/common'),
     },
   },
   test: {

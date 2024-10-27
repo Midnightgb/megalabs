@@ -22,6 +22,7 @@
     "@ionic/vue-router": "^8.3.3",
     "ionicons": "^7.0.0",
     "megalabs": "file:",
+    "swiper": "^11.1.14",
     "vue": "^3.3.0",
     "vue-router": "^4.2.0"
   },
