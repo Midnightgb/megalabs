@@ -1,33 +1,33 @@
 <template>
-  <div id="container">
-    <strong>{{ name }}</strong>
-    <ImageCarousel :slides="slides" :autoplay="false" :navigation="false"/>
-  </div>
+  <ImageCarousel :slides="slides" :autoplay="false" :navigation="false"/>
 </template>
 
 <script setup lang="ts">
+import { getProductSlides } from '@/utils/productConfig';
+import type { ProductName } from '@/utils/productConfig';
 import ImageCarousel from '@/components/common/ImageCarousel/ImageCarousel.vue';
-import type { CarouselSlide } from '@/components/common/ImageCarousel';
-/* import imageDesktop from'@gastro-desktop/webp/BOOK GAS 0924-2_page78_image8.webp'
-import imageTablet from '@gastro-tablet/webp/BOOK GAS 0924-2_page78_image8.webp'
- */
+import type { CarouselSlide } from '@/components/common/ImageCarousel/index';
 
-const slides: CarouselSlide[] = [
-/*   {
-    image: imageDesktop,
-  },
-  {
-    image: imageTablet,
-  },
-  {
-    image: imageDesktop,
-  } */
-];
+const props = defineProps<{
+  name: ProductName;
+}>();
 
-defineProps({
-  name: String,
-});
-
-
+const slides: CarouselSlide[] = getProductSlides(props.name).map(slide => ({
+  image: {
+    srcset: `${slide.desktop.webp} 1x`,
+    fallback: slide.desktop.jpg,
+    sources: [
+      {
+        srcset: slide.tablet.webp,
+        media: '(max-width: 768px)',
+        type: 'image/webp'
+      },
+      {
+        srcset: slide.tablet.jpg,
+        media: '(max-width: 768px)',
+        type: 'image/jpeg'
+      }
+    ]
+  }
+}));
 </script>
-

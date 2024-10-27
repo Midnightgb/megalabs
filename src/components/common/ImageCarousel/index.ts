@@ -1,5 +1,13 @@
 export interface CarouselSlide {
-  image: string;
+  image: {
+    srcset: string;
+    fallback: string;
+    sources: {
+      srcset: string;
+      media: string;
+      type: string;
+    }[];
+  };
   title?: string;
   description?: string;
 }

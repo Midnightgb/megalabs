@@ -12,7 +12,17 @@
         </ion-toolbar>
       </ion-header>
 
-      <GastroContainer name="Tab 2 page" />
+      <GastroContainer name="dexgstrol" />
+<!--       <GastroContainer name="sansflu" />
+      <GastroContainer name="pregesix" />
+      <GastroContainer name="lunarium" />
+      <GastroContainer name="combispas" />
+      <GastroContainer name="kirruiz" />
+      <GastroContainer name="neocholal-s" />
+      <GastroContainer name="enterex" />
+      <GastroContainer name="lactipan" />
+      <GastroContainer name="glutapak" />
+      <GastroContainer name="phlebodia" /> -->
     </ion-content>
   </ion-page>
 </template>

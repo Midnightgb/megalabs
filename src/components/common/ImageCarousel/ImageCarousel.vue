@@ -9,11 +9,21 @@
   >
     <swiper-slide v-for="(slide, index) in slides" :key="index">
       <div class="relative w-full h-full">
-        <img 
-          :src="slide.image" 
-          :alt="slide.title"
-          class="w-full h-full object-cover"
-        />
+        <picture>
+          <source
+            v-for="(source, sourceIndex) in slide.image.sources"
+            :key="sourceIndex"
+            :srcset="source.srcset"
+            :media="source.media"
+            :type="source.type"
+          />
+          <source :srcset="slide.image.srcset" type="image/webp" />
+          <img 
+            :src="slide.image.fallback" 
+            :alt="slide.title || ''"
+            class="w-full h-full object-cover"
+          />
+        </picture>
         <div 
           v-if="slide.title" 
           class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
