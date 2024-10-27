@@ -1,5 +1,7 @@
 <template>
-  <ImageCarousel :slides="slides" :autoplay="false" :navigation="false"/>
+  <div id="container">
+    <ImageCarousel :slides="slides" :autoplay="false" :navigation="false"/>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -31,3 +33,12 @@ const slides: CarouselSlide[] = getProductSlides(props.name).map(slide => ({
   }
 }));
 </script>
+
+<style scoped>
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+</style>
+
