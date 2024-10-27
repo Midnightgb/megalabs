@@ -2,6 +2,9 @@
     <ion-content class="content"> 
         <div class="outer-container">
             <div class="inner-container">
+                <div class="container1">
+                    <button class="btn-salir">Sign out</button>
+                </div>
                 <div class="container-2">
                     <div class="text-container">
                         <h2 class="large-text">Megalabs</h2> 
@@ -33,7 +36,6 @@
         </div>
     </ion-content>
 </template>
-
 
 <script setup lang="ts">
 import { IonContent, IonCard, IonCardHeader, IonCardContent } from '@ionic/vue';
@@ -79,7 +81,6 @@ const handleCardClick = (title: string) => {
 };
 </script>
 
-
 <style scoped>
 .content {
   background-color: white; 
@@ -89,7 +90,6 @@ const handleCardClick = (title: string) => {
 
 .outer-container {
   background-color: white; 
-  padding: 16px; 
 }
 
 .inner-container {
@@ -99,12 +99,31 @@ const handleCardClick = (title: string) => {
   align-items: center; 
   justify-content: center; 
   height: 100%; 
-  gap: 16px; 
   position: relative; 
 }
 
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-salir {
+    padding: 10px 70px;
+    background-color: white; 
+    color: rgb(0, 130, 125);
+    border: none;
+    cursor: pointer;
+    font-size: 20px; 
+    font-weight: bold;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 .container-2 {
-  padding: 10px; 
+  padding-bottom: 10px;
   text-align: center; 
 }
 
@@ -127,6 +146,7 @@ const handleCardClick = (title: string) => {
   flex-wrap: wrap; 
   justify-content: center; 
   gap: 10px;
+  padding: 16px;
 }
 
 .card {
@@ -202,11 +222,61 @@ const handleCardClick = (title: string) => {
   .card {
     width: calc(33% - 16px); 
   }
+
+  .large-text {
+    font-size: 50px; /* Aumentado para pantallas medianas */
+  }
 }
 
 @media (max-width: 580px) {
+  .outer-container {
+    padding: 0;
+  }
+
+  .inner-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: auto;
+  }
+
+  .container1 {
+    order: 2;
+    width: auto;
+  }
+
+  .large-text {
+    font-size: 28px; /* Aumentado desde 24px a 28px */
+  }
+
+  .container-2 {
+    order: 1;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .text-container {
+    align-items: flex-start;
+  }
+
+  .large-text {
+    font-size: 30px;
+  }
+
+  .btn-salir {
+    padding: 4px 15px;
+    font-size: 16px;
+    border-radius: 0;   
+  }
+
   .card {
-    width: calc(50% - 16px); 
+    width: calc(50% - 16px);
+  }
+
+  .circular-container {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -215,6 +285,4 @@ const handleCardClick = (title: string) => {
     width: 100%;
   }
 }
-
 </style>
-
