@@ -35,7 +35,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tab2',
         // @ts-expect-error we don't have type declarations for the views
-        component: () => import('@/views/Tab2Page.vue')
+        component: () => import('@/views/GastroPage.vue')
       },
       {
         path: 'tab3',
