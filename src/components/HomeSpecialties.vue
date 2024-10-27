@@ -3,7 +3,7 @@
         <div class="outer-container">
             <div class="inner-container">
                 <div class="container1">
-                    <button class="btn-salir">Sign out</button>
+                    <button class="btn-salir" @click="handleSignOut">Sign out</button>
                 </div>
                 <div class="container-2">
                     <div class="text-container">
@@ -78,6 +78,10 @@ const handleCardClick = (title: string) => {
     if (title === 'GASTRO') {
         console.log('Gastro');
     }
+};
+
+const handleSignOut = () => {
+    console.log('CERRAR SESION');
 };
 </script>
 
