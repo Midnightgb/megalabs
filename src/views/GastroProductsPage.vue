@@ -7,16 +7,22 @@
           <div class="icon-wrapper">
             <img src="@icons/gastro.png" alt="Gastric Icon" />
           </div>
-          <h2>Línea de Salud gástrica</h2>
+          <h2 class="gastric-title">Línea de Salud gástrica</h2>
         </div>
         
         <div class="products-grid">
           <div class="product-card">
-            <img src="@products/desktop/png/sansflu14.png" alt="Sansflu 14" />
+            <div class="product-images w-48 h-32 relative">
+              <div class="absolute -top-5 -left-7 w-48 h-32 ">
+                <img src="@products/desktop/png/sansflu28.png" alt="Sansflu 28" />
+              </div>
+              <div class="absolute top-6 left-10 w-48 h-32 ">
+                <img src="@products/desktop/png/sansflu14.png" alt="Sansflu 14" />
+              </div>
+            </div>
             <p class="product-desc">Caja con 14 y 28 tabletas 40 mg</p>
           </div>
           <div class="product-card">
-            <img src="@products/desktop/png/sansflu28.png" alt="Sansflu 28" />
           </div>
           <div class="product-card">
             <img src="@products/desktop/png/ulsicral.png" alt="Ulsicral" />
@@ -35,7 +41,7 @@
           <div class="icon-wrapper">
             <img src="" alt="Hepatic Icon" />
           </div>
-          <h2>Línea de Salud hepática</h2>
+          <h2 class="hepatic-title">Línea de Salud hepática</h2>
         </div>
         
         <div class="products-grid">
@@ -44,9 +50,9 @@
             <p class="product-desc">Caja con envase con 14, 28 y 42 cápsulas de 45 mg</p>
           </div>
           <div class="product-card">
-            <img src="@products/desktop/png/kirruz10.png" alt="Kirruz 10" />
           </div>
           <div class="product-card">
+            <img src="@products/desktop/png/kirruz10.png" alt="Kirruz 10" />
             <img src="@products/desktop/png/kirruz30.png" alt="Kirruz 30" />
             <p class="product-desc">Caja con 10 y 30 sobres de 3 g</p>
           </div>
@@ -59,7 +65,7 @@
           <div class="icon-wrapper">
             <img src="" alt="Intestinal Icon" />
           </div>
-          <h2>Línea de Salud intestinal y equilibrio</h2>
+          <h2 class="intestinal-title">Línea de Salud intestinal y equilibrio</h2>
         </div>
         
         <div class="products-grid">
@@ -82,11 +88,8 @@
         </div>
       </section>
 
-      <!-- Footer -->
       <footer class="legal-footer">
-        <p class="legal-text">
-          {{ legalText }}
-        </p>
+        <p class="legal-text">{{ legalText }}</p>
       </footer>
     </div>
   </div>
@@ -104,33 +107,34 @@ No de Aviso COFEPRIS: 2309042002C00371, 2314102002C00109`;
 .medical-products {
   width: 100%;
   min-height: 100vh;
+  background: white;
+  background-image: url('@products/desktop/png/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .background-wrapper {
-  background-image: url('@products/tablet/png/BOOK GAS 0924-2_page2_image1.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  padding: 2rem;
+  margin: 0 auto;
 }
 
 .product-section {
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  padding: 0.75rem calc((100% - 1200px) / 2);
+  background-color: white;
+  width: 100%;
 }
 
 .section-header {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .icon-wrapper {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,15 +147,27 @@ No de Aviso COFEPRIS: 2309042002C00371, 2314102002C00109`;
 }
 
 .section-header h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.gastric-title {
+  color: #3B82F6;
+}
+
+.hepatic-title {
+  color: #16a34a;
+}
+
+.intestinal-title {
+  color: #dc2626;
 }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .product-card {
@@ -159,59 +175,76 @@ No de Aviso COFEPRIS: 2309042002C00371, 2314102002C00109`;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .product-card img {
   width: 100%;
+  max-width: 250px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s;
+}
+
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
+
+.product-section:first-of-type {
+  background: linear-gradient(to top, #b1d4e8, white);
+  border-radius: 8px;
+
+}
+
+.product-section:nth-of-type(2) {
+  background: linear-gradient(to top, #afd6cf, white);
+}
+
+.product-section:nth-of-type(3) {
+  background: linear-gradient(to top, #f6ccca, white);
 }
 
 .product-desc {
   font-size: 0.875rem;
   color: #666;
   line-height: 1.4;
+  margin-top: 0.5rem;
 }
 
 .legal-footer {
   margin-top: 3rem;
   padding: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 0.5rem;
+  border-top: 1px solid #eee;
 }
 
 .legal-text {
   font-size: 0.75rem;
   color: #666;
   line-height: 1.5;
+  text-align: justify;
 }
 
-/* Specific section styles */
-.gastric .section-header h2 {
-  color: #2563eb;
-}
-
-.hepatic .section-header h2 {
-  color: #16a34a;
-}
-
-.intestinal .section-header h2 {
-  color: #dc2626;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
   }
+}
 
+@media (max-width: 640px) {
   .background-wrapper {
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   .product-section {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 </style>

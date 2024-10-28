@@ -87,7 +87,7 @@ const getAllProducts = () => {
 
 const handleButtonClick = (button: ButtonsImg) => {
   if (button.alt === "productos") {
-    router.push('/home/gastro/gastroentorologia/products');
+    //router.push('/home/gastro/gastroentorologia/products');
     return;
   }
   selectedProduct.value = button.alt;
