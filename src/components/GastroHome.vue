@@ -17,7 +17,6 @@
         <div class="content-area">
           <div class="row first-row">
             <div class="first-row-content">
-              <p>Primera Fila</p>
               <ion-button color="success" class="right-button">
                 Botón Derecha
               </ion-button>
@@ -63,12 +62,11 @@ const cards = ref([
 <style scoped>
 .main-container {
   display: flex;
-  height: 100vh;
+  height: 100vh;/*  ESTPO PUEDE QUE UIZAS DAÑE EL DISEÑO */
   background-color: white;
 }
 
 .side-bar {
-  width: 250px;
   background-color: rgba(4, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -112,7 +110,6 @@ const cards = ref([
 }
 
 .first-row {
-  height: 60px;
   background-color: #ff6f61;
 }
 
@@ -120,7 +117,6 @@ const cards = ref([
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .right-button {
@@ -165,4 +161,5 @@ const cards = ref([
   font-size: 14px;
   color: white; 
 }
+
 </style>
