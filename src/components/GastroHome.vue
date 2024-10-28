@@ -43,13 +43,20 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+import gastro from '@img/gastroSpecialties/gastro.jpg';
+import internista from '@img/gastroSpecialties/internista.jpg';
+import medicinaGeneral from '@img/gastroSpecialties/medicinageneral.jpeg';
+import cirujano from '@img/gastroSpecialties/cirujano.jpeg';
+import geriatra from '@img/gastroSpecialties/geriatra.jpg';
+import vitamedica from '@img/gastroSpecialties/vitamedica.jpg';
+
 const cards = ref([
-  { title: "Gastroenterologia", image: "https://via.placeholder.com/150" },
-  { title: "Internista", image: "https://via.placeholder.com/150" },
-  { title: "Medicina General", image: "https://via.placeholder.com/150" },
-  { title: "Cirujano", image: "https://via.placeholder.com/150" },
-  { title: "Geriatra", image: "https://via.placeholder.com/150" },
-  { title: "Vita Medica", image: "https://via.placeholder.com/150" },
+  { title: "Gastroenterologia", image: gastro },
+  { title: "Internista", image: internista },
+  { title: "Medicina General", image: medicinaGeneral },
+  { title: "Cirujano", image: cirujano },
+  { title: "Geriatra", image: geriatra },
+  { title: "Vita Medica", image: vitamedica },
 ]);
 </script>
 
@@ -62,7 +69,7 @@ const cards = ref([
 
 .side-bar {
   width: 250px;
-  background-color: #d3d3d3;
+  background-color: rgba(4, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,6 +98,7 @@ const cards = ref([
 
 .promo-button {
   width: 100%;
+  background-color: rgb(0, 131, 124);
 }
 
 .content-area {
@@ -104,7 +112,7 @@ const cards = ref([
 }
 
 .first-row {
-  height: 60px; /* Altura reducida para la primera fila */
+  height: 60px;
   background-color: #ff6f61;
 }
 
@@ -117,16 +125,16 @@ const cards = ref([
 
 .right-button {
   margin-left: auto;
+  background-color: rgb(0, 131, 124); 
 }
 
 .second-row {
   background-color: #4a90e2;
 }
-
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres tarjetas por fila */
-  gap: 10px; /* Espacio entre tarjetas */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
   padding: 10px;
 }
 
@@ -134,26 +142,33 @@ const cards = ref([
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  text-align: left; /* Alinear texto a la izquierda */
-  padding: 10px;
-  position: relative; /* Para la disposición del título */
+  text-align: left;
+  padding: 0; 
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
 }
 
 .card-image {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover; 
+  max-height: 150px;
 }
 
 .title-container {
-  background-color: #4CAF50; /* Color verde para el contenedor del título */
-  padding: 5px; /* Espacio interno */
-  text-align: right; /* Alinear el texto a la derecha */
+  background-color: rgb(0, 131, 124); 
+  padding: 5px; 
+  text-align: right; 
+  margin-top: 0; 
+  border-radius: 0 0 5px 5px; 
 }
 
 .card-title {
-  margin: 0; /* Elimina márgenes del título */
+  margin: 0; 
   font-size: 14px;
-  color: white; /* Color del texto del título */
+  color: white; 
 }
 </style>
