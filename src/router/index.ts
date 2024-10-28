@@ -1,8 +1,19 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-// @ts-expect-error we don't have type declarations for the views
-import HomePage from '@/views/HomePage.vue'
 
+// Importación de vistas
+// @ts-expect-error we don't have type declarations
+const LoginPage = () => import('@/views/LoginPage.vue')
+// @ts-expect-error we don't have type declarations
+const HomePage = () => import('@/views/HomePage.vue')
+// @ts-expect-error we don't have type declarations
+const HomeSpecialties = () => import('@/components/HomeSpecialties.vue')
+// @ts-expect-error we don't have type declarations
+const GastroHomePage = () => import('@/views/GastroHomePage.vue')
+// @ts-expect-error we don't have type declarations
+const GastroHome = () => import('@/components/GastroHome.vue')
+// @ts-expect-error we don't have type declarations
+const GastroEntorologiaPage = () => import('@/views/GastroEntorologiaPage.vue')
 // Definición de rutas
 const routes: Array<RouteRecordRaw> = [
   {
@@ -12,12 +23,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/login',
     name: 'login',
-    // @ts-expect-error we don't have type declarations for the views
-    component: () => import('@/views/LoginPage.vue')
+    component: LoginPage
   },
   {
     path: '/forgot-password',
-    // @ts-expect-error we don't have type declarations for the views
+    // @ts-expect-error we don't have type declarations
     component: () => import('@/views/ForgotPasswordPage.vue')
   },
   {
@@ -27,13 +37,21 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: '',
-        // @ts-expect-error we don't have type declarations for the views
-        component: () => import('@/components/HomeSpecialties.vue')
+        component: HomeSpecialties
       },
       {
         path: 'gastro',
-        // @ts-expect-error we don't have type declarations for the views
-        component: () => import('@/views/GastroPage.vue'),
+        component: GastroHomePage,
+        children: [
+          {
+            path: '',
+            component: GastroHome
+          },
+          {
+            path: 'gastroentorologia',
+            component: GastroEntorologiaPage
+          }
+        ]
       }
     ]
   },
