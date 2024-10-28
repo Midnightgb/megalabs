@@ -86,7 +86,28 @@ const cards = ref([
   width: 100%;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px;
+  margin-left: auto;
+  gap: 1rem;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  z-index: 2;
+  width: auto;
+}
+
+.img-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 26vh;
+  display: block;
+  position: relative;
 }
 
 .promo-button {
