@@ -8,8 +8,8 @@
           </div>
 
           <div class="button-container">
-            <ion-button expand="full" color="primary" class="promo-button">
-              Guía de Promoción
+            <ion-button class="promo-button">
+              Guias de Promocion
             </ion-button>
           </div>
         </div>
@@ -17,8 +17,8 @@
         <div class="content-area">
           <div class="row first-row">
             <div class="first-row-content">
-              <ion-button color="success" class="right-button">
-                Botón Derecha
+              <ion-button  class="right-button" >
+                <img src="@img/gastroHome/dexgstrol.png" alt="dexgstron" />
               </ion-button>
             </div>
           </div>
@@ -43,7 +43,7 @@
 import { ref } from 'vue';
 
 import gastro from '@img/gastroSpecialties/gastro.jpg';
-import internista from '@img/gastroSpecialties/internista.jpg';
+import internista from '@img/gastroSpecialties/internistav2.png';
 import medicinaGeneral from '@img/gastroSpecialties/medicinageneral.jpeg';
 import cirujano from '@img/gastroSpecialties/cirujano.jpeg';
 import geriatra from '@img/gastroSpecialties/geriatra.jpg';
@@ -63,11 +63,14 @@ const cards = ref([
 .main-container {
   display: flex;
   height: 100vh;/*  ESTPO PUEDE QUE UIZAS DAÑE EL DISEÑO */
-  background-color: white;
+  background-image: url('@img/gastroSpecialties/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .side-bar {
-  background-color: rgba(4, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.726);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,8 +98,8 @@ const cards = ref([
 }
 
 .promo-button {
-  width: 100%;
-  background-color: rgb(0, 131, 124);
+  --background: #00837c;
+  --color: white;
 }
 
 .content-area {
@@ -106,54 +109,68 @@ const cards = ref([
 }
 
 .row {
-  padding: 20px;
-}
-
-.first-row {
-  background-color: #ff6f61;
+  padding: 5px;
 }
 
 .first-row-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .right-button {
-  margin-left: auto;
-  background-color: rgb(0, 131, 124); 
+  --background: white;
+  --box-shadow: none;
+  --border-radius: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  width: 30%;
+  margin-right: 80px;
+}
+
+.right-button img {
+  height: 100%;
 }
 
 .second-row {
-  background-color: #4a90e2;
+  background-color: transparent;
+  height: 100vh;
+  padding: 10px 5rem;
 }
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
+  gap: 2.5rem; 
 }
 
 .card {
   background-color: white;
-  border: 1px solid #ccc;
   text-align: left;
-  padding: 0; 
+  padding: 0;
+  width: 180px;
+  height: 255px; /* Altura fija para todas las tarjetas */
   position: relative;
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden; /* Para asegurar que la imagen no se salga de la tarjeta */
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 .card-image {
   width: 100%;
-  max-height: 150px;
+  height: 250px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Esto hará que la imagen cubra el área sin distorsionarse */
+  object-position: center; /* Centra la imagen */
 }
 
 .title-container {
   background-color: rgb(0, 131, 124); 
   padding: 5px; 
   text-align: right; 
-  margin-top: 0; 
+  margin-top: 0;
+  z-index: 3; /* Para que la imagen se vea sobre la tarjeta */
 }
 
 .card-title {
