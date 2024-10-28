@@ -5,11 +5,13 @@
     :slides-per-view="1"
     :autoplay="autoplay"
     :navigation="true"
+    :initial-slide="initialSlide"
+    :loop="true"
     class="w-full h-full"
   >
     <swiper-slide v-for="(slide, index) in slides" :key="index">
       <div class="relative w-full h-full">
-        <picture>
+        <picture v-if="slide.image">
           <source
             v-for="(source, sourceIndex) in slide.image.sources"
             :key="sourceIndex"
@@ -24,13 +26,6 @@
             class="absolute top-0 left-0 w-full h-full object-contain"
           />
         </picture>
-        <div 
-          v-if="slide.title" 
-          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4"
-        >
-          <h3 class="text-lg font-semibold">{{ slide.title }}</h3>
-          <p v-if="slide.description" class="text-sm">{{ slide.description }}</p>
-        </div>
       </div>
     </swiper-slide>
   </swiper>
@@ -46,32 +41,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-const swiperBreakpoints = {
-  320: {
-    slidesPerView: 1,
-    spaceBetween: 10
-  },
-  768: {
-    slidesPerView: 1,
-    spaceBetween: 20
-  },
-  1024: {
-    slidesPerView: 1,
-    spaceBetween: 30
-  }
-}
-
-const getResponsiveImage = (slide: CarouselProps['slides'][number]) => {
-  if(window.innerWidth < 1024) return slide.image;
-  if(window.innerWidth < 768) return slide.image;
-  return slide.image;
-}
-
-withDefaults(defineProps<CarouselProps>(), {
+withDefaults(defineProps<CarouselProps & { initialSlide?: number }>(), {
   autoplay: () => ({
     delay: 3000,
     disableOnInteraction: false
-  })
+  }),
+  initialSlide: 0
 });
 
 const modules = [Pagination, Navigation, Autoplay];

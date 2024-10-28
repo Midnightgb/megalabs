@@ -1,37 +1,59 @@
 <template>
   <div id="container">
-    <ImageCarousel :slides="slides" :autoplay="false" :navigation="false"/>
+    <ImageCarousel 
+      :slides="formattedSlides" 
+      :autoplay="false" 
+      :navigation="false"
+      :initial-slide="getInitialSlideIndex()"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import { getProductSlides } from '@/utils/productConfig';
 import type { ProductName } from '@/utils/productConfig';
 import ImageCarousel from '@/components/common/ImageCarousel/ImageCarousel.vue';
-import type { CarouselSlide } from '@/components/common/ImageCarousel/index';
 
 const props = defineProps<{
-  name: ProductName;
+  initialProduct: ProductName;
+  allProducts: ProductName[];
 }>();
 
-const slides: CarouselSlide[] = getProductSlides(props.name).map(slide => ({
-  image: {
-    srcset: `${slide.desktop.webp} 1x`,
-    fallback: slide.desktop.jpg,
-    sources: [
-      {
-        srcset: slide.tablet.webp,
-        media: '(max-width: 768px)',
-        type: 'image/webp'
-      },
-      {
-        srcset: slide.tablet.jpg,
-        media: '(max-width: 768px)',
-        type: 'image/jpeg'
+const formattedSlides = computed(() => {
+  return props.allProducts.flatMap(productName => {
+    const slides = getProductSlides(productName);
+    return slides.map(slide => ({
+      image: {
+        srcset: slide.desktop.webp,
+        fallback: slide.desktop.jpg,
+        sources: [
+          {
+            srcset: slide.tablet.webp,
+            media: '(max-width: 768px)',
+            type: 'image/webp'
+          },
+          {
+            srcset: slide.tablet.jpg,
+            media: '(max-width: 768px)',
+            type: 'image/jpeg'
+          }
+        ]
       }
-    ]
+    }));
+  });
+});
+
+const getInitialSlideIndex = () => {
+  let index = 0;
+  for (const product of props.allProducts) {
+    if (product === props.initialProduct) {
+      return index;
+    }
+    index += getProductSlides(product).length;
   }
-}));
+  return 0;
+};
 </script>
 
 <style scoped>
@@ -41,4 +63,3 @@ const slides: CarouselSlide[] = getProductSlides(props.name).map(slide => ({
   margin: 0 auto;
 }
 </style>
-
