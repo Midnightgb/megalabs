@@ -47,7 +47,7 @@ const routes: Array<RouteRecordRaw> = [
         children: [
           {
             path: '',
-            component: GastroHome
+            component: GastroEntorologiaPage
           },
           {
             path: 'gastroentorologia',
