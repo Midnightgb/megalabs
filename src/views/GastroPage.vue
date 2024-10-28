@@ -19,11 +19,12 @@
       
       <Transition name="fade">
         <div v-if="selectedProduct" class="overlay">
-            <button class="close-btn" @click="closeOverlay" aria-label="Cerrar">×</button>
-            <GastroContainer 
-              :key="selectedProduct" 
-              :name="selectedProduct" 
-            />
+          <button class="close-btn" @click="closeOverlay" aria-label="Cerrar">×</button>
+          <GastroContainer 
+            :key="selectedProduct" 
+            :initial-product="selectedProduct"
+            :all-products="getAllProducts()"
+          />
         </div>
       </Transition>
     </ion-content>
@@ -69,6 +70,12 @@ const buttonimgs: ButtonsImg[] = [
 ];
 
 const selectedProduct = ref<string | null>(null);
+
+const getAllProducts = () => {
+  return buttonimgs
+    .filter(button => button.alt !== 'productos')
+    .map(button => button.alt);
+};
 
 const handleButtonClick = (button: ButtonsImg) => {
   if (button.alt === "productos") {
