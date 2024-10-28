@@ -2,6 +2,12 @@
   <ion-page>
     <ion-content :fullscreen="true" class="ion-content-fullscreen">
       <div class="bg-img">
+        <div class="back-button-container">
+          <ion-button fill="clear" @click="goBack" class="back-button">
+            <ion-icon :icon="arrowBackOutline"></ion-icon>
+             Regresar
+          </ion-button>
+        </div>
         <div class="logo-container">
           <img src="@img/gastroHome/lineagastro.png" alt="GastroHome" class="logo">
         </div>
@@ -31,7 +37,9 @@
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonContent } from '@ionic/vue';
+import { IonPage, IonContent, IonButton, IonIcon } from '@ionic/vue';
+import { arrowBackOutline } from 'ionicons/icons';
+import { useRouter } from 'vue-router';
 import GastroContainer from '@/components/GastroContainer.vue';
 import { ref } from 'vue';
 
@@ -82,9 +90,26 @@ const handleButtonClick = (button: ButtonsImg) => {
 const closeOverlay = () => {
   selectedProduct.value = null;
 };
+
+const router = useRouter();
+
+const goBack = () => {
+  console.log("se debio volver");
+  router.go(-1);
+};
 </script>
 
 <style scoped>
+.back-button {
+  font-weight: bold;
+  --ion-font-weight: 700;
+}
+
+.back-button ion-icon {
+  font-weight: bold;
+  stroke-width: 48px; /* Increase this value to make the icon bolder */
+}
+
 .bg-img {
   background-color: #fafbfd;
   background-image: url('@img/general/desktop/webp/BOOK GAS 0924-2_page78_image1.webp');
@@ -114,7 +139,7 @@ const closeOverlay = () => {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 60px 40px;
+  padding: 30px 40px;
   margin-left: auto;
   gap: 1rem;
   height: 100vh;
@@ -131,7 +156,7 @@ const closeOverlay = () => {
   padding: 0;
   cursor: pointer;
   transition: transform 0.2s ease;
-  width: 16rem;
+  width: 26vh;
   display: block;
   position: relative;
 }
