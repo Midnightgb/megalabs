@@ -145,13 +145,13 @@ const goBack = () => {
 .button-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding: 30px 40px;
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px;
   margin-left: auto;
   gap: 1rem;
   height: 100vh;
   overflow-y: auto;
-  /* Añadir estas propiedades */
   position: relative;
   z-index: 2;
   width: auto;
