@@ -19,13 +19,11 @@
       
       <Transition name="fade">
         <div v-if="selectedProduct" class="overlay">
-          <div class="overlay-content">
             <button class="close-btn" @click="closeOverlay" aria-label="Cerrar">×</button>
             <GastroContainer 
               :key="selectedProduct" 
               :name="selectedProduct" 
             />
-          </div>
         </div>
       </Transition>
     </ion-content>
@@ -121,6 +119,10 @@ const closeOverlay = () => {
   gap: 1rem;
   height: 100vh;
   overflow-y: auto;
+  /* Añadir estas propiedades */
+  position: relative;
+  z-index: 2;
+  width: auto;
 }
 
 .img-btn {
@@ -130,6 +132,9 @@ const closeOverlay = () => {
   cursor: pointer;
   transition: transform 0.2s ease;
   width: 16rem;
+  /* Añadir estas propiedades */
+  display: block;
+  position: relative;
 }
 
 .img-btn:hover {
@@ -141,6 +146,9 @@ const closeOverlay = () => {
   height: auto;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  /* Añadir estas propiedades */
+  display: block;
+  object-fit: contain;
 }
 
 .overlay {

@@ -22,45 +22,55 @@ export type ProductName = keyof typeof productRanges;
 
 export type ProductLine = 'gastro' | 'dolor' | 'gineco - urologia' | 'pediatria - respiratoria' | 'dermatologia' | 'hidrisage' | 'oftamologia' | 'medicina general';
 
+function encodeImagePath(path: string): string {
+  // Divide la ruta en segmentos y codifica solo la parte del nombre del archivo
+  const segments = path.split('/');
+  const fileName = segments.pop(); // Obtiene el último segmento (nombre del archivo)
+  const encodedFileName = encodeURIComponent(fileName || '');
+  return [...segments, encodedFileName].join('/');
+}
+
 export function getProductImages(product: ProductName, imageNumber: number) {
-  const config = productRanges[product]
-  const formattedImageNumber = imageNumber.toString()
-  const imageName = `BOOK GAS 0924-2_page78_image${formattedImageNumber}`
+  const config = productRanges[product];
+  const imageName = `BOOK GAS 0924-2_page78_image${imageNumber}`;
+  
+  const baseUrl = `/src/assets/img/${config.line}/${product}`;
+  
   return {
     desktop: {
-      webp: `/src/assets/img/${config.line}/${product}/desktop/webp/${imageName}.webp`,
-      jpg: `/src/assets/img/${config.line}/${product}/desktop/jpg/${imageName}.jpg`
+      webp: encodeImagePath(`${baseUrl}/desktop/webp/${imageName}.webp`),
+      jpg: encodeImagePath(`${baseUrl}/desktop/jpg/${imageName}.jpg`)
     },
     tablet: {
-      webp: `/src/assets/img/${config.line}/${product}/tablet/webp/${imageName}.webp`,
-      jpg: `/src/assets/img/${config.line}/${product}/tablet/jpg/${imageName}.jpg`
+      webp: encodeImagePath(`${baseUrl}/tablet/webp/${imageName}.webp`),
+      jpg: encodeImagePath(`${baseUrl}/tablet/jpg/${imageName}.jpg`)
     }
-  }
+  };
 }
 
 export function getProductSlides(product: ProductName) {
-  const config = productRanges[product]
-  const slides = []
+  const config = productRanges[product];
+  const slides = [];
   
   // Agregar imágenes del rango principal
   for (let i = config.range[0]; i <= config.range[1]; i++) {
-    const images = getProductImages(product, i)
+    const images = getProductImages(product, i);
     slides.push({
       desktop: {
         webp: images.desktop.webp,
-        jpg: images.desktop.jpg // fallback para navegadores antiguos
+        jpg: images.desktop.jpg
       },
       tablet: {
         webp: images.tablet.webp,
-        jpg: images.tablet.jpg // fallback para navegadores antiguos
+        jpg: images.tablet.jpg
       }
-    })
+    });
   }
   
   // Agregar imágenes extra si existen
   if (config.extra) {
     for (const pageNum of config.extra) {
-      const images = getProductImages(product, pageNum)
+      const images = getProductImages(product, pageNum);
       slides.push({
         desktop: {
           webp: images.desktop.webp,
@@ -70,9 +80,9 @@ export function getProductSlides(product: ProductName) {
           webp: images.tablet.webp,
           jpg: images.tablet.jpg
         }
-      })
+      });
     }
   }
   
-  return slides
+  return slides;
 }
