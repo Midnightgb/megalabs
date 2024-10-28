@@ -132,7 +132,6 @@ const closeOverlay = () => {
   cursor: pointer;
   transition: transform 0.2s ease;
   width: 16rem;
-  /* Añadir estas propiedades */
   display: block;
   position: relative;
 }
@@ -146,7 +145,6 @@ const closeOverlay = () => {
   height: auto;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  /* Añadir estas propiedades */
   display: block;
   object-fit: contain;
 }
