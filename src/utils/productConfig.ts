@@ -36,7 +36,8 @@ export function getProductImages(product: ProductName, imageNumber: number) {
   
   const baseUrl = `/assets/img/${config.line}/${product}`;
   
-  return {
+  // Crear las rutas
+  const paths = {
     desktop: {
       webp: encodeImagePath(`${baseUrl}/desktop/webp/${imageName}.webp`),
       jpg: encodeImagePath(`${baseUrl}/desktop/jpg/${imageName}.jpg`)
@@ -46,6 +47,30 @@ export function getProductImages(product: ProductName, imageNumber: number) {
       jpg: encodeImagePath(`${baseUrl}/tablet/jpg/${imageName}.jpg`)
     }
   };
+
+  // Log para verificar las rutas generadas
+  console.log(`[Image Paths] Product: ${product}, Number: ${imageNumber}`, {
+    desktop: paths.desktop,
+    tablet: paths.tablet
+  });
+
+  // Verificar si las imágenes existen
+  Promise.all([
+    fetch(paths.desktop.jpg),
+    fetch(paths.desktop.webp),
+    fetch(paths.tablet.jpg),
+    fetch(paths.tablet.webp)
+  ]).then(responses => {
+    responses.forEach((res, index) => {
+      const format = index % 2 === 0 ? 'jpg' : 'webp';
+      const device = index < 2 ? 'desktop' : 'tablet';
+      console.log(`[Image Check] ${product} - ${device}/${format}: ${res.ok ? 'OK' : 'Failed'}`);
+    });
+  }).catch(error => {
+    console.error(`[Image Load Error] ${product}:`, error);
+  });
+  
+  return paths;
 }
 
 export function getProductSlides(product: ProductName) {
