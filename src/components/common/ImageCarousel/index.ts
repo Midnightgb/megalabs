@@ -18,4 +18,5 @@ export interface CarouselProps {
     delay: number;
     disableOnInteraction: boolean;
   };
+  initialSlide?: number;
 }
