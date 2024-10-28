@@ -87,8 +87,7 @@ const getAllProducts = () => {
 
 const handleButtonClick = (button: ButtonsImg) => {
   if (button.alt === "productos") {
-    console.log("productos no se puede seleccionar");
-    selectedProduct.value = null;
+    router.push('/home/gastro/gastroentorologia/products');
     return;
   }
   selectedProduct.value = button.alt;
@@ -114,7 +113,7 @@ const goBack = () => {
 
 .back-button ion-icon {
   font-weight: bold;
-  stroke-width: 48px; /* Increase this value to make the icon bolder */
+  stroke-width: 48px;
 }
 
 .bg-img {

@@ -14,6 +14,8 @@ const GastroHomePage = () => import('@/views/GastroHomePage.vue')
 const GastroHome = () => import('@/components/GastroHome.vue')
 // @ts-expect-error we don't have type declarations
 const GastroEntorologiaPage = () => import('@/views/GastroEntorologiaPage.vue')
+// @ts-expect-error we don't have type declarations
+const GastroProductsPage = () => import('@/views/GastroProductsPage.vue')
 // Definición de rutas
 const routes: Array<RouteRecordRaw> = [
   {
@@ -50,7 +52,11 @@ const routes: Array<RouteRecordRaw> = [
           {
             path: 'gastroentorologia',
             component: GastroEntorologiaPage
-          }
+          },
+          {
+            path: 'gastroentorologia/products',
+            component: GastroProductsPage
+          },
         ]
       }
     ]
