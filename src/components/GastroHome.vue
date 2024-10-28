@@ -135,13 +135,11 @@ const cards = ref([
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
-  padding: 10px;
 }
 
 .card {
   background-color: white;
   border: 1px solid #ccc;
-  border-radius: 8px;
   text-align: left;
   padding: 0; 
   position: relative;
@@ -152,9 +150,6 @@ const cards = ref([
 
 .card-image {
   width: 100%;
-  height: auto;
-  border-radius: 5px 5px 0 0;
-  object-fit: cover; 
   max-height: 150px;
 }
 
@@ -163,7 +158,6 @@ const cards = ref([
   padding: 5px; 
   text-align: right; 
   margin-top: 0; 
-  border-radius: 0 0 5px 5px; 
 }
 
 .card-title {
