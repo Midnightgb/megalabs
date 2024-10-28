@@ -1,265 +1,158 @@
 <template>
   <ion-page>
-    <ion-content :fullscreen="true" class="ion-content-fullscreen">
-      <div class="bg-img">
-        <div class="back-button-container">
-          <ion-button fill="clear" @click="goBack" class="back-button">
-            <ion-icon :icon="arrowBackOutline"></ion-icon>
-             Regresar
-          </ion-button>
+    <ion-content>
+      <div class="main-container">
+        <div class="side-bar">
+          <div class="logo-container">
+            <img src="@img/gastroHome/lineagastro.png" alt="Logo" class="logo" />
+          </div>
+          
+          <div class="button-container">
+            <ion-button expand="full" color="primary" class="promo-button">
+              Guía de Promoción
+            </ion-button>
+          </div>
         </div>
-        <div class="logo-container">
-          <img src="@img/gastroHome/lineagastro.png" alt="GastroHome" class="logo">
-        </div>
-        <div class="button-container">
-          <button 
-            v-for="button in buttonimgs" 
-            :key="button.alt" 
-            class="img-btn"
-            @click="handleButtonClick(button)"
-          >
-            <img :src="button.img" :alt="button.alt" class="button-image">
-          </button>
+        
+        <div class="content-area">
+          <div class="row first-row">
+            <div class="first-row-content">
+              <p>Primera Fila</p>
+              <ion-button color="success" class="right-button">
+                Botón Derecha
+              </ion-button>
+            </div>
+          </div>
+          
+          <div class="row second-row">
+            <div class="cards-grid">
+              <div v-for="(card, index) in cards" :key="index" class="card">
+                <img :src="card.image" :alt="card.title" class="card-image" />
+                <div class="title-container">
+                  <h4 class="card-title">{{ card.title }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <Transition name="fade">
-        <div v-if="selectedProduct" class="overlay">
-          <button class="close-btn" @click="closeOverlay" aria-label="Cerrar">×</button>
-          <GastroContainer 
-            :key="selectedProduct" 
-            :initial-product="selectedProduct"
-            :all-products="getAllProducts()"
-          />
-        </div>
-      </Transition>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonContent, IonButton, IonIcon } from '@ionic/vue';
-import { arrowBackOutline } from 'ionicons/icons';
-import { useRouter } from 'vue-router';
-import GastroContainer from '@/components/GastroContainer.vue';
 import { ref } from 'vue';
 
-interface ButtonsImg {
-  img: string;
-  alt: string;
-}
-
-import dexgstrol from '@img/gastroHome/dexgstrol.png';
-import sansflu from '@img/gastroHome/sansflu.png';
-import pregesix from '@img/gastroHome/pregesix.png';
-import lunarium from '@img/gastroHome/lunarium.png';
-import combispas from '@img/gastroHome/combispas.png';
-import kirruz from '@img/gastroHome/kirruz.png';
-import neocholal from '@img/gastroHome/neocholal.png';
-import enterex from '@img/gastroHome/enterex.png';
-import lactipan from '@img/gastroHome/lactipan.png';
-import glutapak from '@img/gastroHome/glutapak.png';
-import phlebodia from '@img/gastroHome/phlebodia.png';
-import productos from '@img/gastroHome/productos.png';
-
-const buttonimgs: ButtonsImg[] = [
-  { alt: 'dexgstrol', img: dexgstrol },
-  { alt: 'sansflu', img: sansflu },
-  { alt: 'pregesix', img: pregesix },
-  { alt: 'lunarium', img: lunarium },
-  { alt: 'combispas', img: combispas },
-  { alt: 'kirruiz', img: kirruz },
-  { alt: 'neocholal-s', img: neocholal },
-  { alt: 'enterex', img: enterex },
-  { alt: 'lactipan', img: lactipan },
-  { alt: 'glutapak', img: glutapak },
-  { alt: 'phlebodia', img: phlebodia },
-  { alt: 'productos', img: productos },
-];
-
-const selectedProduct = ref<string | null>(null);
-
-const getAllProducts = () => {
-  return buttonimgs
-    .filter(button => button.alt !== 'productos')
-    .map(button => button.alt);
-};
-
-const handleButtonClick = (button: ButtonsImg) => {
-  if (button.alt === "productos") {
-    console.log("productos no se puede seleccionar");
-    selectedProduct.value = null;
-    return;
-  }
-  selectedProduct.value = button.alt;
-};
-
-const closeOverlay = () => {
-  selectedProduct.value = null;
-};
-
-const router = useRouter();
-
-const goBack = () => {
-  console.log("se debio volver");
-  router.go(-1);
-};
+const cards = ref([
+  { title: "Tarjeta 1", image: "https://via.placeholder.com/150" },
+  { title: "Tarjeta 2", image: "https://via.placeholder.com/150" },
+  { title: "Tarjeta 3", image: "https://via.placeholder.com/150" },
+  { title: "Tarjeta 4", image: "https://via.placeholder.com/150" },
+  { title: "Tarjeta 5", image: "https://via.placeholder.com/150" },
+  { title: "Tarjeta 6", image: "https://via.placeholder.com/150" },
+]);
 </script>
 
 <style scoped>
-.back-button {
-  font-weight: bold;
-  --ion-font-weight: 700;
-}
-
-.back-button ion-icon {
-  font-weight: bold;
-  stroke-width: 48px; /* Increase this value to make the icon bolder */
-}
-
-.bg-img {
-  background-color: #fafbfd;
-  background-image: url('@img/general/desktop/webp/BOOK GAS 0924-2_page78_image1.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
+.main-container {
   display: flex;
+  height: 100vh;
+  background-color: white;
+}
+
+.side-bar {
+  width: 250px;
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-container {
-  position: absolute;
-  top: 60px;
-  left: 50px;
-  width: 15%;
-  z-index: 1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  width: 100%;
+  width: 150px;
   height: auto;
 }
 
 .button-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.promo-button {
+  width: 100%;
+}
+
+.content-area {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding: 30px 40px;
+}
+
+.row {
+  padding: 20px;
+}
+
+.first-row {
+  height: 60px; /* Altura reducida para la primera fila */
+  background-color: #ff6f61;
+}
+
+.first-row-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.right-button {
   margin-left: auto;
-  gap: 1rem;
-  height: 100vh;
-  overflow-y: auto;
-  /* Añadir estas propiedades */
-  position: relative;
-  z-index: 2;
-  width: auto;
 }
 
-.img-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  width: 26vh;
-  display: block;
-  position: relative;
+.second-row {
+  background-color: #4a90e2;
 }
 
-.img-btn:hover {
-  transform: scale(1.05);
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres tarjetas por fila */
+  gap: 10px; /* Espacio entre tarjetas */
+  padding: 10px;
 }
 
-.button-image {
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-image {
   width: 100%;
   height: auto;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  display: block;
-  object-fit: contain;
+  border-radius: 5px;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  backdrop-filter: blur(5px);
+.title-container {
+  background-color: #4CAF50; /* Color verde para el contenedor del título */
+  padding: 5px; /* Espacio interno */
 }
 
-.overlay-content {
-  background-color: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 1200px;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.1);
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  z-index: 1001;
-}
-
-.close-btn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
-}
-
-/* Transiciones */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-/* Asegura que el scroll funcione correctamente en dispositivos móviles */
-@media (max-width: 768px) {
-  .button-container {
-    padding: 40px 20px;
-  }
-
-  .img-btn {
-    width: 12rem;
-  }
-
-  .overlay-content {
-    width: 95%;
-    padding: 1.5rem;
-  }
-
-  .logo-container {
-    width: 25%;
-    top: 30px;
-    left: 30px;
-  }
+.card-title {
+  margin: 0; /* Elimina márgenes del título */
+  font-size: 14px;
+  color: white; /* Color del texto del título */
+  text-align: center; /* Centrar texto */
 }
 </style>
