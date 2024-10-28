@@ -25,7 +25,7 @@
             @click="handleCardClick(card)"
             :style="{ borderColor: circleColors[index] }"
           >
-            <div class="circular-image-container">
+            <div class="circular-image-container" :style="{ borderColor: circleColors[index] }">
               <img :src="card.image" :alt="card.title" class="card-image" />
             </div>
           </div>
@@ -63,11 +63,7 @@ const cards: Card[] = [
   { title: "DOLOR", image: dolorImg, path: "/home/dolor" },
   { title: "GASTRO", image: gastroImg, path: "/home/gastro" },
   { title: "GINECO - UROLOGIA", image: urologiaImg, path: "/home/urologia" },
-  {
-    title: "PEDIATRA - RESPIRATORIA",
-    image: respirarImg,
-    path: "/home/respiratoria",
-  },
+  { title: "PEDIATRA - RESPIRATORIA", image: respirarImg, path: "/home/respiratoria", },
   { title: "DERMATOLOGIA", image: dermaImg, path: "/home/dermatologia" },
   { title: "HIDRISAGE", image: hidrisageImg, path: "/home/hidrisage" },
   { title: "OFTAMOLOGIA", image: oftamologiaImg, path: "/home/oftamologia" },
@@ -129,7 +125,7 @@ const handleSignOut = () => {
 }
 
 .btn-salir {
-  padding: 10px 70px;
+  padding: 10px 55px;
   background-color: white;
   color: rgb(0, 130, 125);
   border: none;
@@ -196,6 +192,7 @@ const handleSignOut = () => {
   align-items: center;
   justify-content: center;
   position: relative;
+  border: 3px solid;
 }
 
 .circular-image-container::after {
@@ -237,17 +234,27 @@ const handleSignOut = () => {
   .cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .btn-salir {
+    padding: 8px 45 px;
+  }
 }
 
 @media (max-width: 900px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .text-container img {
+    width: 400px !important;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 580px) {
   .outer-container {
     padding: 0;
+    height: auto;
   }
 
   .inner-container {
@@ -265,6 +272,7 @@ const handleSignOut = () => {
 
   .text-container img {
     width: 200px !important;
+    margin-top: 0;
   }
 
   .container-2 {
@@ -278,9 +286,13 @@ const handleSignOut = () => {
   }
 
   .btn-salir {
-    padding: 4px 15px;
+    padding: 4px 18px;
     font-size: 16px;
     border-radius: 0;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .cards-grid {
@@ -294,4 +306,5 @@ const handleSignOut = () => {
     height: 120px;
   }
 }
+
 </style>
