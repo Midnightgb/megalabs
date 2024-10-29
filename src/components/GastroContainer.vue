@@ -25,10 +25,10 @@ const formattedSlides = computed(() => {
     const slides = getProductSlides(productName);
     return slides.map(slide => ({
       image: {
-        src: slide.desktop.jpg,
+        src: slide.desktop.jpg.replace(/^\//, ''),
         sources: [
           {
-            srcset: slide.tablet.jpg,
+            srcset: slide.tablet.jpg.replace(/^\//, ''),
             media: '(max-width: 768px)',
             type: 'image/jpeg'
           }
