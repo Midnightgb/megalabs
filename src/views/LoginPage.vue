@@ -34,14 +34,14 @@ const password = ref('')
 
 const handleLogin = () => {
   // Aquí iría la lógica de inicio de sesión
-  if (email.value === 'tinta' && password.value === 'tinta') {
+  router.push('/home');
+/*   if (email.value === 'tinta' && password.value === 'tinta') {
     console.log('Login attempt', { email: email.value, password: password.value });
-    router.push('/home');
     //alert('Login exitoso'); // Aquí se puede hacer el login real
   }else{
     credentialsIncorrect.value = true;
     console.log("Login incorrecto " + credentialsIncorrect.value);
-  }
+  } */
     
 };
 
