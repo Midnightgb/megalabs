@@ -32,8 +32,8 @@ export type ProductName = keyof typeof productRanges;
 export type ProductLine = 'gastro' | 'dolor' | 'gineco - urologia' | 'pediatria - respiratoria' | 'dermatologia' | 'hidrisage' | 'oftamologia' | 'medicina general';
 
 function getImagePath(line: string, product: string, type: string, number: number) {
-  const imageName = `image${number}`;
-  return `/assets/img/${imageName}.jpg`;
+  // Retornamos la misma imagen de Imgur para todas las solicitudes
+  return 'https://i.imgur.com/vK9MseO.jpeg';
 }
 
 export function getProductImages(product: ProductName, imageNumber: number) {
@@ -49,18 +49,17 @@ export function getProductImages(product: ProductName, imageNumber: number) {
       }
     };
 
-    console.log('Image paths:', paths); // Para depuración
+    console.log('Image paths:', paths);
 
-    const images = {
+    // Simplemente devolvemos las URLs directamente
+    return {
       desktop: {
-        jpg: images.desktop.jpg[paths.desktop.jpg]?.default || paths.desktop.jpg
+        jpg: paths.desktop.jpg
       },
       tablet: {
-        jpg: images.tablet.jpg[paths.tablet.jpg]?.default || paths.tablet.jpg
+        jpg: paths.tablet.jpg
       }
     };
-
-    return images;
   } catch (error) {
     console.error(`Error loading images for product ${product} number ${imageNumber}:`, error);
     return null;
