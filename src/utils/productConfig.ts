@@ -33,7 +33,7 @@ export type ProductLine = 'gastro' | 'dolor' | 'gineco - urologia' | 'pediatria 
 
 function getImagePath(line: string, product: string, type: string, number: number) {
   const imageName = `BOOK GAS 0924-2_page78_image${number}`;
-  return `/src/assets/img/${line}/${product}/${type}/jpg/${imageName}.jpg`;
+  return `/assets/img/${line}/${product}/${type}/jpg/${imageName}.jpg`;
 }
 
 export function getProductImages(product: ProductName, imageNumber: number) {
@@ -49,15 +49,18 @@ export function getProductImages(product: ProductName, imageNumber: number) {
       }
     };
 
-    // Obtener las imágenes del glob
-    return {
+    console.log('Image paths:', paths); // Para depuración
+
+    const images = {
       desktop: {
-        jpg: images.desktop.jpg[paths.desktop.jpg]?.default || ''
+        jpg: images.desktop.jpg[paths.desktop.jpg]?.default || paths.desktop.jpg
       },
       tablet: {
-        jpg: images.tablet.jpg[paths.tablet.jpg]?.default || ''
+        jpg: images.tablet.jpg[paths.tablet.jpg]?.default || paths.tablet.jpg
       }
     };
+
+    return images;
   } catch (error) {
     console.error(`Error loading images for product ${product} number ${imageNumber}:`, error);
     return null;

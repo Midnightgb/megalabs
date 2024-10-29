@@ -4,20 +4,17 @@ const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'megalabs',
   webDir: 'dist',
+  server: {
+    androidScheme: 'https',
+    iosScheme: 'capacitor'
+  },
   ios: {
     webDir: 'dist'
   },
-  copy: {
-    include: [
-      {
-        src: 'src/assets/',
-        dest: 'assets/'
-      },
-      {
-        src: 'dist/assets/',
-        dest: 'assets/'
-      }
-    ]
+  plugins: {
+    Filesystem: {
+      directory: 'DOCUMENTS'
+    }
   }
 };
 
