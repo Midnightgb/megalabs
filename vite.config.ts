@@ -17,5 +17,13 @@ export default defineConfig({
       '@products': path.resolve(__dirname, './src/assets/img/general'),
       '@common': path.resolve(__dirname, './src/components/common'),
     }
-  }
+  },
+  build: {
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
+    },
+  },
 })

@@ -34,7 +34,7 @@ export function getProductImages(product: ProductName, imageNumber: number) {
   const config = productRanges[product];
   const imageName = `BOOK GAS 0924-2_page78_image${imageNumber}`;
   
-  const baseUrl = `src/assets/img/${config.line}/${product}`;
+  const baseUrl = `/assets/img/${config.line}/${product}`;
   
   // Crear las rutas
   const paths = {
