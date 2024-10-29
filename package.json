@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build && node scripts/copy-assets.js",
+    "ios:build": "npm run build && ionic cap sync ios && ionic cap copy ios",
     "preview": "vite preview",
     "test:e2e": "cypress run",
     "test:unit": "vitest",

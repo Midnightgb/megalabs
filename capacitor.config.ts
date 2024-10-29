@@ -12,11 +12,12 @@ const config: CapacitorConfig = {
       {
         src: 'src/assets/',
         dest: 'assets/'
+      },
+      {
+        src: 'dist/assets/',
+        dest: 'assets/'
       }
     ]
-  },
-  server: {
-    androidScheme: 'https'
   }
 };
 
