@@ -1,14 +1,9 @@
-// src/utils/productConfig.ts
-import { Capacitor } from '@capacitor/core';
-
-// Importar todas las imágenes de forma dinámica
+// Importar solo las imágenes JPG
 const images = {
   desktop: {
-    webp: import.meta.glob('@/assets/img/**/*.webp', { eager: true }),
     jpg: import.meta.glob('@/assets/img/**/*.jpg', { eager: true })
   },
   tablet: {
-    webp: import.meta.glob('@/assets/img/**/*.webp', { eager: true }),
     jpg: import.meta.glob('@/assets/img/**/*.jpg', { eager: true })
   }
 };
@@ -36,9 +31,9 @@ export const productRanges: Record<string, ProductRange> = {
 export type ProductName = keyof typeof productRanges;
 export type ProductLine = 'gastro' | 'dolor' | 'gineco - urologia' | 'pediatria - respiratoria' | 'dermatologia' | 'hidrisage' | 'oftamologia' | 'medicina general';
 
-function getImagePath(line: string, product: string, type: string, format: string, number: number) {
+function getImagePath(line: string, product: string, type: string, number: number) {
   const imageName = `BOOK GAS 0924-2_page78_image${number}`;
-  return `/src/assets/img/${line}/${product}/${type}/${format}/${imageName}.${format}`;
+  return `/src/assets/img/${line}/${product}/${type}/jpg/${imageName}.jpg`;
 }
 
 export function getProductImages(product: ProductName, imageNumber: number) {
@@ -47,23 +42,19 @@ export function getProductImages(product: ProductName, imageNumber: number) {
   try {
     const paths = {
       desktop: {
-        webp: getImagePath(config.line, product, 'desktop', 'webp', imageNumber),
-        jpg: getImagePath(config.line, product, 'desktop', 'jpg', imageNumber)
+        jpg: getImagePath(config.line, product, 'desktop', imageNumber)
       },
       tablet: {
-        webp: getImagePath(config.line, product, 'tablet', 'webp', imageNumber),
-        jpg: getImagePath(config.line, product, 'tablet', 'jpg', imageNumber)
+        jpg: getImagePath(config.line, product, 'tablet', imageNumber)
       }
     };
 
     // Obtener las imágenes del glob
     return {
       desktop: {
-        webp: images.desktop.webp[paths.desktop.webp]?.default || '',
         jpg: images.desktop.jpg[paths.desktop.jpg]?.default || ''
       },
       tablet: {
-        webp: images.tablet.webp[paths.tablet.webp]?.default || '',
         jpg: images.tablet.jpg[paths.tablet.jpg]?.default || ''
       }
     };

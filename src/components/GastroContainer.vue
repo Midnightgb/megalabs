@@ -25,14 +25,8 @@ const formattedSlides = computed(() => {
     const slides = getProductSlides(productName);
     return slides.map(slide => ({
       image: {
-        srcset: slide.desktop.webp,
-        fallback: slide.desktop.jpg,
+        src: slide.desktop.jpg,
         sources: [
-          {
-            srcset: slide.tablet.webp,
-            media: '(max-width: 768px)',
-            type: 'image/webp'
-          },
           {
             srcset: slide.tablet.jpg,
             media: '(max-width: 768px)',
