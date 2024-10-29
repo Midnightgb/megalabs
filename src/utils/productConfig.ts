@@ -49,7 +49,7 @@ export function getProductImages(product: ProductName, imageNumber: number) {
   const normalizedLine = normalizeProductName(config.line);
   const imageName = `BOOK GAS 0924-2_page78_image${imageNumber}`;
   
-  const baseUrl = `/assets/img/${normalizedLine}/${normalizedProduct}`;
+  const baseUrl = `src/assets/img/${normalizedLine}/${normalizedProduct}`;
   
   // Crear las rutas
   const paths = {
