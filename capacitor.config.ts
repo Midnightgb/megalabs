@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'megalabs',
   webDir: 'dist',
   ios: {
-    webDir: 'dist',
+    webDir: 'dist'
   },
   copy: {
     include: [
@@ -14,6 +14,9 @@ const config: CapacitorConfig = {
         dest: 'assets/'
       }
     ]
+  },
+  server: {
+    androidScheme: 'https'
   }
 };
 

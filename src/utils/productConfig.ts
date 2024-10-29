@@ -1,8 +1,10 @@
-type ProductRange = {
+import { Capacitor } from '@capacitor/core';
+
+export interface ProductRange {
   line: ProductLine;
   range: readonly [number, number];
   extra?: readonly number[];
-};
+}
 
 export const productRanges: Record<string, ProductRange> = {
   dexgstrol: { line: 'gastro', range: [8, 15] },
@@ -19,57 +21,55 @@ export const productRanges: Record<string, ProductRange> = {
 } as const;
 
 export type ProductName = keyof typeof productRanges;
-
 export type ProductLine = 'gastro' | 'dolor' | 'gineco - urologia' | 'pediatria - respiratoria' | 'dermatologia' | 'hidrisage' | 'oftamologia' | 'medicina general';
 
+function getAssetPath(path: string): string {
+  const isNative = Capacitor.isNativePlatform();
+  return isNative ? path.substring(1) : path;
+}
+
+function normalizeProductName(name: string): string {
+  return name.toLowerCase().trim();
+}
+
 function encodeImagePath(path: string): string {
-  // Divide la ruta en segmentos y codifica solo la parte del nombre del archivo
   const segments = path.split('/');
-  const fileName = segments.pop(); // Obtiene el último segmento (nombre del archivo)
-  const encodedFileName = encodeURIComponent(fileName || '');
-  return [...segments, encodedFileName].join('/');
+  const fileName = segments.pop();
+  const encodedFileName = fileName ? encodeURIComponent(fileName) : '';
+  
+  // Normaliza todos los segmentos de la ruta a minúsculas
+  const normalizedSegments = segments.map(segment => segment.toLowerCase());
+  
+  return [...normalizedSegments, encodedFileName].join('/');
 }
 
 export function getProductImages(product: ProductName, imageNumber: number) {
   const config = productRanges[product];
+  const normalizedProduct = normalizeProductName(product);
+  const normalizedLine = normalizeProductName(config.line);
   const imageName = `BOOK GAS 0924-2_page78_image${imageNumber}`;
   
-  const baseUrl = `/assets/img/${config.line}/${product}`;
+  const baseUrl = `/assets/img/${normalizedLine}/${normalizedProduct}`;
   
   // Crear las rutas
   const paths = {
     desktop: {
-      webp: encodeImagePath(`${baseUrl}/desktop/webp/${imageName}.webp`),
-      jpg: encodeImagePath(`${baseUrl}/desktop/jpg/${imageName}.jpg`)
+      webp: getAssetPath(encodeImagePath(`${baseUrl}/desktop/webp/${imageName}.webp`)),
+      jpg: getAssetPath(encodeImagePath(`${baseUrl}/desktop/jpg/${imageName}.jpg`))
     },
     tablet: {
-      webp: encodeImagePath(`${baseUrl}/tablet/webp/${imageName}.webp`),
-      jpg: encodeImagePath(`${baseUrl}/tablet/jpg/${imageName}.jpg`)
+      webp: getAssetPath(encodeImagePath(`${baseUrl}/tablet/webp/${imageName}.webp`)),
+      jpg: getAssetPath(encodeImagePath(`${baseUrl}/tablet/jpg/${imageName}.jpg`))
     }
   };
 
   // Log para verificar las rutas generadas
-  console.log(`[Image Paths] Product: ${product}, Number: ${imageNumber}`, {
+  console.log(`[Image Paths] Product: ${normalizedProduct}, Number: ${imageNumber}`, {
     desktop: paths.desktop,
-    tablet: paths.tablet
+    tablet: paths.tablet,
+    isNative: Capacitor.isNativePlatform()
   });
 
-  // Verificar si las imágenes existen
-  Promise.all([
-    fetch(paths.desktop.jpg),
-    fetch(paths.desktop.webp),
-    fetch(paths.tablet.jpg),
-    fetch(paths.tablet.webp)
-  ]).then(responses => {
-    responses.forEach((res, index) => {
-      const format = index % 2 === 0 ? 'jpg' : 'webp';
-      const device = index < 2 ? 'desktop' : 'tablet';
-      console.log(`[Image Check] ${product} - ${device}/${format}: ${res.ok ? 'OK' : 'Failed'}`);
-    });
-  }).catch(error => {
-    console.error(`[Image Load Error] ${product}:`, error);
-  });
-  
   return paths;
 }
 
@@ -110,4 +110,21 @@ export function getProductSlides(product: ProductName) {
   }
   
   return slides;
+}
+
+// Función auxiliar para verificar rutas de archivos
+export function validateProductPaths(product: ProductName): void {
+  const config = productRanges[product];
+  const normalizedProduct = normalizeProductName(product);
+  
+  console.log(`[Validating Paths] Product: ${normalizedProduct}`);
+  
+  const slides = getProductSlides(product);
+  slides.forEach((slide, index) => {
+    Object.entries(slide).forEach(([device, formats]) => {
+      Object.entries(formats).forEach(([format, path]) => {
+        console.log(`[Path Check] ${device}/${format}: ${path}`);
+      });
+    });
+  });
 }
