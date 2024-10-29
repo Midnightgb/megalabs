@@ -22,7 +22,6 @@
           </button>
         </div>
       </div>
-      
       <Transition name="fade">
         <div v-if="selectedProduct" class="overlay">
           <button class="close-btn" @click="closeOverlay" aria-label="Cerrar">×</button>

@@ -21,7 +21,8 @@
             @error="handleSourceError(source, index, sourceIndex)"
           />
           <img 
-            :src="slide.image.src" 
+            :src="slide.image.fallback"
+            :srcset="slide.image.srcset"
             :alt="slide.title || ''"
             class="absolute top-0 left-0 w-full h-full object-contain"
             @load="handleImageLoad(slide, index)"

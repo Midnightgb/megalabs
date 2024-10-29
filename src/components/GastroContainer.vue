@@ -11,31 +11,18 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { getProductSlides } from '@/utils/productConfig';
-import type { ProductName } from '@/utils/productConfig';
+import { getProductSlides } from '@/utils/cloudinaryConfig';
+import type { ProductName } from '@/utils/cloudinaryConfig';
 import ImageCarousel from '@/components/common/ImageCarousel/ImageCarousel.vue';
+import type { CarouselSlide } from '@/components/common/ImageCarousel';
 
 const props = defineProps<{
   initialProduct: ProductName;
   allProducts: ProductName[];
 }>();
 
-const formattedSlides = computed(() => {
-  return props.allProducts.flatMap(productName => {
-    const slides = getProductSlides(productName);
-    return slides.map(slide => ({
-      image: {
-        src: slide.desktop.jpg.replace(/^\//, ''),
-        sources: [
-          {
-            srcset: slide.tablet.jpg.replace(/^\//, ''),
-            media: '(max-width: 768px)',
-            type: 'image/jpeg'
-          }
-        ]
-      }
-    }));
-  });
+const formattedSlides = computed<CarouselSlide[]>(() => {
+  return props.allProducts.flatMap(productName => getProductSlides(productName));
 });
 
 const getInitialSlideIndex = () => {
@@ -48,6 +35,9 @@ const getInitialSlideIndex = () => {
   }
   return 0;
 };
+
+
+
 </script>
 
 <style scoped>

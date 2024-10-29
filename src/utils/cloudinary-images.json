@@ -1,0 +1,2067 @@
+{
+  "total_imgs": 300,
+  "missing_imgs": {
+    "dexgstrol": {
+      "expected": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "found": [
+        15,
+        15,
+        15,
+        12,
+        11,
+        9,
+        8,
+        9,
+        14,
+        13,
+        8,
+        12,
+        11,
+        9,
+        10,
+        8,
+        8,
+        14,
+        13,
+        10,
+        9,
+        15,
+        14,
+        13,
+        11,
+        12,
+        10,
+        14,
+        13,
+        12,
+        10,
+        11
+      ],
+      "missing": []
+    },
+    "sansflu": {
+      "expected": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        177
+      ],
+      "found": [
+        20,
+        19,
+        18,
+        177,
+        17,
+        16,
+        20,
+        19,
+        18,
+        177,
+        17,
+        16,
+        20,
+        19,
+        18,
+        177,
+        17,
+        16,
+        20,
+        19,
+        18,
+        177,
+        17,
+        16
+      ],
+      "missing": []
+    },
+    "pregesix": {
+      "expected": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "found": [
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21
+      ],
+      "missing": []
+    },
+    "lunarium": {
+      "expected": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        179
+      ],
+      "found": [
+        33,
+        32,
+        31,
+        30,
+        29,
+        179,
+        33,
+        32,
+        31,
+        29,
+        30,
+        179,
+        31,
+        33,
+        32,
+        30,
+        29,
+        179,
+        33,
+        32,
+        31,
+        30,
+        29,
+        179
+      ],
+      "missing": []
+    },
+    "combispas": {
+      "expected": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        181
+      ],
+      "found": [
+        38,
+        36,
+        37,
+        35,
+        34,
+        181,
+        38,
+        37,
+        36,
+        35,
+        34,
+        181,
+        38,
+        37,
+        36,
+        35,
+        34,
+        181,
+        38,
+        37,
+        36,
+        35,
+        34,
+        181
+      ],
+      "missing": []
+    },
+    "kirruiz": {
+      "expected": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        183
+      ],
+      "found": [
+        43,
+        42,
+        41,
+        40,
+        39,
+        183,
+        43,
+        42,
+        41,
+        40,
+        39,
+        183,
+        43,
+        42,
+        41,
+        40,
+        39,
+        183,
+        43,
+        42,
+        41,
+        40,
+        39,
+        183
+      ],
+      "missing": []
+    },
+    "neocholal-s": {
+      "expected": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        185
+      ],
+      "found": [
+        52,
+        51,
+        50,
+        49,
+        48,
+        47,
+        46,
+        45,
+        44,
+        185,
+        52,
+        51,
+        50,
+        49,
+        48,
+        47,
+        46,
+        44,
+        45,
+        185,
+        52,
+        51,
+        50,
+        49,
+        48,
+        47,
+        46,
+        45,
+        44,
+        185,
+        52,
+        51,
+        50,
+        49,
+        48,
+        47,
+        46,
+        45,
+        44,
+        185
+      ],
+      "missing": []
+    },
+    "enterex": {
+      "expected": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "found": [
+        59,
+        58,
+        57,
+        56,
+        55,
+        57,
+        56,
+        55,
+        59,
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        59,
+        58,
+        54,
+        53,
+        59,
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        54,
+        53
+      ],
+      "missing": []
+    },
+    "lactipan": {
+      "expected": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "found": [
+        64,
+        63,
+        62,
+        61,
+        60,
+        64,
+        63,
+        62,
+        61,
+        60,
+        64,
+        63,
+        62,
+        61,
+        60,
+        64,
+        63,
+        62,
+        60,
+        61
+      ],
+      "missing": []
+    },
+    "glutapak": {
+      "expected": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "found": [
+        71,
+        70,
+        69,
+        68,
+        67,
+        66,
+        65,
+        71,
+        70,
+        69,
+        68,
+        67,
+        66,
+        65,
+        70,
+        71,
+        69,
+        68,
+        67,
+        66,
+        65,
+        71,
+        70,
+        69,
+        68,
+        67,
+        66,
+        65
+      ],
+      "missing": []
+    },
+    "phlebodia": {
+      "expected": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "found": [
+        77,
+        76,
+        75,
+        74,
+        73,
+        72,
+        77,
+        76,
+        75,
+        74,
+        73,
+        72,
+        77,
+        76,
+        75,
+        74,
+        73,
+        72,
+        77,
+        76,
+        75,
+        74,
+        73,
+        72
+      ],
+      "missing": []
+    }
+  },
+  "sansflu": {
+    "tablet-webp": [
+      {
+        "public_id": "image16_budprg",
+        "asset_folder": "gastro/sansflu/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168258/image16_budprg.webp"
+      },
+      {
+        "public_id": "image17_cqr3di",
+        "asset_folder": "gastro/sansflu/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168260/image17_cqr3di.webp"
+      },
+      {
+        "public_id": "image18_k5osob",
+        "asset_folder": "gastro/sansflu/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168263/image18_k5osob.webp"
+      },
+      {
+        "public_id": "image19_ykmqmu",
+        "asset_folder": "gastro/sansflu/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168264/image19_ykmqmu.webp"
+      },
+      {
+        "public_id": "image20_dvcgzy",
+        "asset_folder": "gastro/sansflu/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168266/image20_dvcgzy.webp"
+      },
+      {
+        "public_id": "image177_gu1gjv",
+        "asset_folder": "gastro/sansflu/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168261/image177_gu1gjv.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image16_nrard7",
+        "asset_folder": "gastro/sansflu/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168249/image16_nrard7.jpg"
+      },
+      {
+        "public_id": "image17_qeyx5u",
+        "asset_folder": "gastro/sansflu/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168251/image17_qeyx5u.jpg"
+      },
+      {
+        "public_id": "image18_uumxab",
+        "asset_folder": "gastro/sansflu/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168254/image18_uumxab.jpg"
+      },
+      {
+        "public_id": "image19_fnyhdz",
+        "asset_folder": "gastro/sansflu/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168255/image19_fnyhdz.jpg"
+      },
+      {
+        "public_id": "image20_z3ouka",
+        "asset_folder": "gastro/sansflu/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168257/image20_z3ouka.jpg"
+      },
+      {
+        "public_id": "image177_rif3s9",
+        "asset_folder": "gastro/sansflu/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168252/image177_rif3s9.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image16_gyqr2i",
+        "asset_folder": "gastro/sansflu/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168239/image16_gyqr2i.webp"
+      },
+      {
+        "public_id": "image17_rskvth",
+        "asset_folder": "gastro/sansflu/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168241/image17_rskvth.webp"
+      },
+      {
+        "public_id": "image18_ccqrcy",
+        "asset_folder": "gastro/sansflu/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168244/image18_ccqrcy.webp"
+      },
+      {
+        "public_id": "image19_sct08j",
+        "asset_folder": "gastro/sansflu/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168246/image19_sct08j.webp"
+      },
+      {
+        "public_id": "image20_xqwbtx",
+        "asset_folder": "gastro/sansflu/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168247/image20_xqwbtx.webp"
+      },
+      {
+        "public_id": "image177_jim4cz",
+        "asset_folder": "gastro/sansflu/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168243/image177_jim4cz.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image16_gm0rye",
+        "asset_folder": "gastro/sansflu/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168231/image16_gm0rye.jpg"
+      },
+      {
+        "public_id": "image17_huutaq",
+        "asset_folder": "gastro/sansflu/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168232/image17_huutaq.jpg"
+      },
+      {
+        "public_id": "image18_gujscx",
+        "asset_folder": "gastro/sansflu/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168235/image18_gujscx.jpg"
+      },
+      {
+        "public_id": "image19_omhbc2",
+        "asset_folder": "gastro/sansflu/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168237/image19_omhbc2.jpg"
+      },
+      {
+        "public_id": "image20_btbpwv",
+        "asset_folder": "gastro/sansflu/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168238/image20_btbpwv.jpg"
+      },
+      {
+        "public_id": "image177_gvrhdj",
+        "asset_folder": "gastro/sansflu/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168234/image177_gvrhdj.jpg"
+      }
+    ]
+  },
+  "pregesix": {
+    "tablet-webp": [
+      {
+        "public_id": "image21_ix2uhp",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168218/image21_ix2uhp.webp"
+      },
+      {
+        "public_id": "image22_c3omlu",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168219/image22_c3omlu.webp"
+      },
+      {
+        "public_id": "image23_a0aclx",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168221/image23_a0aclx.webp"
+      },
+      {
+        "public_id": "image24_twpruk",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168222/image24_twpruk.webp"
+      },
+      {
+        "public_id": "image25_sqpbkg",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168224/image25_sqpbkg.webp"
+      },
+      {
+        "public_id": "image26_jrycd9",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168226/image26_jrycd9.webp"
+      },
+      {
+        "public_id": "image27_guenam",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168227/image27_guenam.webp"
+      },
+      {
+        "public_id": "image28_x74ssh",
+        "asset_folder": "gastro/pregesix/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168229/image28_x74ssh.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image21_gswmg5",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168205/image21_gswmg5.jpg"
+      },
+      {
+        "public_id": "image22_bbn5iw",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168207/image22_bbn5iw.jpg"
+      },
+      {
+        "public_id": "image23_cllrhz",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168208/image23_cllrhz.jpg"
+      },
+      {
+        "public_id": "image24_d9ozyt",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168210/image24_d9ozyt.jpg"
+      },
+      {
+        "public_id": "image25_r3njld",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168212/image25_r3njld.jpg"
+      },
+      {
+        "public_id": "image26_sftsaq",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168213/image26_sftsaq.jpg"
+      },
+      {
+        "public_id": "image27_mahjkn",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168215/image27_mahjkn.jpg"
+      },
+      {
+        "public_id": "image28_peh2ey",
+        "asset_folder": "gastro/pregesix/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168216/image28_peh2ey.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image21_malvgo",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168193/image21_malvgo.webp"
+      },
+      {
+        "public_id": "image22_vdv75z",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168194/image22_vdv75z.webp"
+      },
+      {
+        "public_id": "image23_uwffzb",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168196/image23_uwffzb.webp"
+      },
+      {
+        "public_id": "image24_gpovid",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168198/image24_gpovid.webp"
+      },
+      {
+        "public_id": "image25_k7q9rd",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168199/image25_k7q9rd.webp"
+      },
+      {
+        "public_id": "image26_zb3jhq",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168201/image26_zb3jhq.webp"
+      },
+      {
+        "public_id": "image27_kraxad",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168202/image27_kraxad.webp"
+      },
+      {
+        "public_id": "image28_b8m1me",
+        "asset_folder": "gastro/pregesix/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168204/image28_b8m1me.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image21_x54w26",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168181/image21_x54w26.jpg"
+      },
+      {
+        "public_id": "image22_mwu2wc",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168182/image22_mwu2wc.jpg"
+      },
+      {
+        "public_id": "image23_ij6dkl",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168184/image23_ij6dkl.jpg"
+      },
+      {
+        "public_id": "image24_qixnxc",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168185/image24_qixnxc.jpg"
+      },
+      {
+        "public_id": "image25_gwjniw",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168187/image25_gwjniw.jpg"
+      },
+      {
+        "public_id": "image26_c5gwaw",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168188/image26_c5gwaw.jpg"
+      },
+      {
+        "public_id": "image27_gi4r7g",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168190/image27_gi4r7g.jpg"
+      },
+      {
+        "public_id": "image28_cxfrad",
+        "asset_folder": "gastro/pregesix/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168192/image28_cxfrad.jpg"
+      }
+    ]
+  },
+  "phlebodia": {
+    "tablet-webp": [
+      {
+        "public_id": "image72_qgiedu",
+        "asset_folder": "gastro/phlebodia/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168171/image72_qgiedu.webp"
+      },
+      {
+        "public_id": "image73_oscyxx",
+        "asset_folder": "gastro/phlebodia/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168173/image73_oscyxx.webp"
+      },
+      {
+        "public_id": "image74_w8p8cr",
+        "asset_folder": "gastro/phlebodia/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168174/image74_w8p8cr.webp"
+      },
+      {
+        "public_id": "image75_csqf3k",
+        "asset_folder": "gastro/phlebodia/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168176/image75_csqf3k.webp"
+      },
+      {
+        "public_id": "image76_fnbdii",
+        "asset_folder": "gastro/phlebodia/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168177/image76_fnbdii.webp"
+      },
+      {
+        "public_id": "image77_reykar",
+        "asset_folder": "gastro/phlebodia/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168179/image77_reykar.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image72_k9ysp5",
+        "asset_folder": "gastro/phlebodia/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168161/image72_k9ysp5.jpg"
+      },
+      {
+        "public_id": "image73_b45h2y",
+        "asset_folder": "gastro/phlebodia/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168163/image73_b45h2y.jpg"
+      },
+      {
+        "public_id": "image74_seji4t",
+        "asset_folder": "gastro/phlebodia/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168165/image74_seji4t.jpg"
+      },
+      {
+        "public_id": "image75_dvnsia",
+        "asset_folder": "gastro/phlebodia/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168167/image75_dvnsia.jpg"
+      },
+      {
+        "public_id": "image76_t5glgv",
+        "asset_folder": "gastro/phlebodia/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168168/image76_t5glgv.jpg"
+      },
+      {
+        "public_id": "image77_u6bvxl",
+        "asset_folder": "gastro/phlebodia/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168170/image77_u6bvxl.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image72_stfcml",
+        "asset_folder": "gastro/phlebodia/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168152/image72_stfcml.webp"
+      },
+      {
+        "public_id": "image73_u0kl4p",
+        "asset_folder": "gastro/phlebodia/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168154/image73_u0kl4p.webp"
+      },
+      {
+        "public_id": "image74_tv2mk1",
+        "asset_folder": "gastro/phlebodia/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168156/image74_tv2mk1.webp"
+      },
+      {
+        "public_id": "image75_ssslrm",
+        "asset_folder": "gastro/phlebodia/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168157/image75_ssslrm.webp"
+      },
+      {
+        "public_id": "image76_ctk5o1",
+        "asset_folder": "gastro/phlebodia/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168159/image76_ctk5o1.webp"
+      },
+      {
+        "public_id": "image77_wjp2iv",
+        "asset_folder": "gastro/phlebodia/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168160/image77_wjp2iv.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image72_ejwp0l",
+        "asset_folder": "gastro/phlebodia/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168143/image72_ejwp0l.jpg"
+      },
+      {
+        "public_id": "image73_gxsxm3",
+        "asset_folder": "gastro/phlebodia/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168145/image73_gxsxm3.jpg"
+      },
+      {
+        "public_id": "image74_cbjpna",
+        "asset_folder": "gastro/phlebodia/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168146/image74_cbjpna.jpg"
+      },
+      {
+        "public_id": "image75_xpydhs",
+        "asset_folder": "gastro/phlebodia/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168148/image75_xpydhs.jpg"
+      },
+      {
+        "public_id": "image76_jdykrq",
+        "asset_folder": "gastro/phlebodia/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168149/image76_jdykrq.jpg"
+      },
+      {
+        "public_id": "image77_dwnwb6",
+        "asset_folder": "gastro/phlebodia/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168151/image77_dwnwb6.jpg"
+      }
+    ]
+  },
+  "neocholal-s": {
+    "tablet-webp": [
+      {
+        "public_id": "image44_didrv0",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168129/image44_didrv0.webp"
+      },
+      {
+        "public_id": "image45_njs1qi",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168131/image45_njs1qi.webp"
+      },
+      {
+        "public_id": "image46_qs2qup",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168132/image46_qs2qup.webp"
+      },
+      {
+        "public_id": "image47_biluo3",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168134/image47_biluo3.webp"
+      },
+      {
+        "public_id": "image48_z49bpo",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168135/image48_z49bpo.webp"
+      },
+      {
+        "public_id": "image49_rsddbt",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168137/image49_rsddbt.webp"
+      },
+      {
+        "public_id": "image50_fxa8fo",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168138/image50_fxa8fo.webp"
+      },
+      {
+        "public_id": "image51_rqzwwa",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168140/image51_rqzwwa.webp"
+      },
+      {
+        "public_id": "image52_advpvr",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168142/image52_advpvr.webp"
+      },
+      {
+        "public_id": "image185_aaerol",
+        "asset_folder": "gastro/neocholal-s/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168127/image185_aaerol.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image44_uccake",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168115/image44_uccake.jpg"
+      },
+      {
+        "public_id": "image45_qmuori",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168114/image45_qmuori.jpg"
+      },
+      {
+        "public_id": "image46_py3kks",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168117/image46_py3kks.jpg"
+      },
+      {
+        "public_id": "image47_wptont",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168118/image47_wptont.jpg"
+      },
+      {
+        "public_id": "image48_mj6nny",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168120/image48_mj6nny.jpg"
+      },
+      {
+        "public_id": "image49_wbmkre",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168121/image49_wbmkre.jpg"
+      },
+      {
+        "public_id": "image50_xprsb0",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168123/image50_xprsb0.jpg"
+      },
+      {
+        "public_id": "image51_uba8yh",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168124/image51_uba8yh.jpg"
+      },
+      {
+        "public_id": "image52_utcrlz",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168126/image52_utcrlz.jpg"
+      },
+      {
+        "public_id": "image185_jabiyd",
+        "asset_folder": "gastro/neocholal-s/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168112/image185_jabiyd.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image44_hbifil",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168098/image44_hbifil.webp"
+      },
+      {
+        "public_id": "image45_r2d7wq",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168100/image45_r2d7wq.webp"
+      },
+      {
+        "public_id": "image46_tyyg02",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168101/image46_tyyg02.webp"
+      },
+      {
+        "public_id": "image47_ycwchg",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168103/image47_ycwchg.webp"
+      },
+      {
+        "public_id": "image48_dsfj74",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168104/image48_dsfj74.webp"
+      },
+      {
+        "public_id": "image49_as94h5",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168106/image49_as94h5.webp"
+      },
+      {
+        "public_id": "image50_ufcqhs",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168108/image50_ufcqhs.webp"
+      },
+      {
+        "public_id": "image51_c7irbh",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168109/image51_c7irbh.webp"
+      },
+      {
+        "public_id": "image52_ftgwab",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168111/image52_ftgwab.webp"
+      },
+      {
+        "public_id": "image185_oqexfx",
+        "asset_folder": "gastro/neocholal-s/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168097/image185_oqexfx.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image44_zmtg3r",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168083/image44_zmtg3r.jpg"
+      },
+      {
+        "public_id": "image45_nukocs",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168085/image45_nukocs.jpg"
+      },
+      {
+        "public_id": "image46_bpd3e6",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168086/image46_bpd3e6.jpg"
+      },
+      {
+        "public_id": "image47_yiuii6",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168088/image47_yiuii6.jpg"
+      },
+      {
+        "public_id": "image48_zgcan9",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168089/image48_zgcan9.jpg"
+      },
+      {
+        "public_id": "image49_ryascl",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168091/image49_ryascl.jpg"
+      },
+      {
+        "public_id": "image50_pupfdc",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168092/image50_pupfdc.jpg"
+      },
+      {
+        "public_id": "image51_opoeer",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168094/image51_opoeer.jpg"
+      },
+      {
+        "public_id": "image52_osusvh",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168095/image52_osusvh.jpg"
+      },
+      {
+        "public_id": "image185_zoe6mh",
+        "asset_folder": "gastro/neocholal-s/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168082/image185_zoe6mh.jpg"
+      }
+    ]
+  },
+  "lunarium": {
+    "tablet-webp": [
+      {
+        "public_id": "image29_r4qjhd",
+        "asset_folder": "gastro/lunarium/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168074/image29_r4qjhd.webp"
+      },
+      {
+        "public_id": "image30_knguad",
+        "asset_folder": "gastro/lunarium/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168075/image30_knguad.webp"
+      },
+      {
+        "public_id": "image31_lgltzt",
+        "asset_folder": "gastro/lunarium/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168077/image31_lgltzt.webp"
+      },
+      {
+        "public_id": "image32_mepcjr",
+        "asset_folder": "gastro/lunarium/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168078/image32_mepcjr.webp"
+      },
+      {
+        "public_id": "image33_thmqyp",
+        "asset_folder": "gastro/lunarium/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168080/image33_thmqyp.webp"
+      },
+      {
+        "public_id": "image179_bttdv3",
+        "asset_folder": "gastro/lunarium/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168072/image179_bttdv3.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image29_l3ute4",
+        "asset_folder": "gastro/lunarium/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168067/image29_l3ute4.jpg"
+      },
+      {
+        "public_id": "image30_k55ozv",
+        "asset_folder": "gastro/lunarium/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168065/image30_k55ozv.jpg"
+      },
+      {
+        "public_id": "image31_o8tw5j",
+        "asset_folder": "gastro/lunarium/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168067/image31_o8tw5j.jpg"
+      },
+      {
+        "public_id": "image32_ju3zpt",
+        "asset_folder": "gastro/lunarium/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168069/image32_ju3zpt.jpg"
+      },
+      {
+        "public_id": "image33_vbejmn",
+        "asset_folder": "gastro/lunarium/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168071/image33_vbejmn.jpg"
+      },
+      {
+        "public_id": "image179_blx0ci",
+        "asset_folder": "gastro/lunarium/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168063/image179_blx0ci.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image29_edzus4",
+        "asset_folder": "gastro/lunarium/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168055/image29_edzus4.webp"
+      },
+      {
+        "public_id": "image30_dvy8xa",
+        "asset_folder": "gastro/lunarium/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168057/image30_dvy8xa.webp"
+      },
+      {
+        "public_id": "image31_fdcimp",
+        "asset_folder": "gastro/lunarium/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168061/image31_fdcimp.webp"
+      },
+      {
+        "public_id": "image32_reqnnt",
+        "asset_folder": "gastro/lunarium/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168058/image32_reqnnt.webp"
+      },
+      {
+        "public_id": "image33_ilq3n1",
+        "asset_folder": "gastro/lunarium/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168060/image33_ilq3n1.webp"
+      },
+      {
+        "public_id": "image179_atftli",
+        "asset_folder": "gastro/lunarium/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168054/image179_atftli.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image29_imfscu",
+        "asset_folder": "gastro/lunarium/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168046/image29_imfscu.jpg"
+      },
+      {
+        "public_id": "image30_da4mr3",
+        "asset_folder": "gastro/lunarium/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168048/image30_da4mr3.jpg"
+      },
+      {
+        "public_id": "image31_hzsz76",
+        "asset_folder": "gastro/lunarium/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168049/image31_hzsz76.jpg"
+      },
+      {
+        "public_id": "image32_kx0ojq",
+        "asset_folder": "gastro/lunarium/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168051/image32_kx0ojq.jpg"
+      },
+      {
+        "public_id": "image33_ijajum",
+        "asset_folder": "gastro/lunarium/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168052/image33_ijajum.jpg"
+      },
+      {
+        "public_id": "image179_o3hchb",
+        "asset_folder": "gastro/lunarium/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168045/image179_o3hchb.jpg"
+      }
+    ]
+  },
+  "lactipan": {
+    "tablet-webp": [
+      {
+        "public_id": "image60_c9eg6x",
+        "asset_folder": "gastro/lactipan/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168037/image60_c9eg6x.webp"
+      },
+      {
+        "public_id": "image61_nhaonx",
+        "asset_folder": "gastro/lactipan/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168038/image61_nhaonx.webp"
+      },
+      {
+        "public_id": "image62_cckivy",
+        "asset_folder": "gastro/lactipan/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168040/image62_cckivy.webp"
+      },
+      {
+        "public_id": "image63_kpr9hv",
+        "asset_folder": "gastro/lactipan/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168041/image63_kpr9hv.webp"
+      },
+      {
+        "public_id": "image64_jajeue",
+        "asset_folder": "gastro/lactipan/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168043/image64_jajeue.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image60_p5mufi",
+        "asset_folder": "gastro/lactipan/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168029/image60_p5mufi.jpg"
+      },
+      {
+        "public_id": "image61_o7urba",
+        "asset_folder": "gastro/lactipan/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168031/image61_o7urba.jpg"
+      },
+      {
+        "public_id": "image62_awkxhg",
+        "asset_folder": "gastro/lactipan/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168032/image62_awkxhg.jpg"
+      },
+      {
+        "public_id": "image63_zlfqx2",
+        "asset_folder": "gastro/lactipan/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168034/image63_zlfqx2.jpg"
+      },
+      {
+        "public_id": "image64_bohzfl",
+        "asset_folder": "gastro/lactipan/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168035/image64_bohzfl.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image60_v07a0v",
+        "asset_folder": "gastro/lactipan/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168021/image60_v07a0v.webp"
+      },
+      {
+        "public_id": "image61_enkkl2",
+        "asset_folder": "gastro/lactipan/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168023/image61_enkkl2.webp"
+      },
+      {
+        "public_id": "image62_v0w3lp",
+        "asset_folder": "gastro/lactipan/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168024/image62_v0w3lp.webp"
+      },
+      {
+        "public_id": "image63_cxlqsm",
+        "asset_folder": "gastro/lactipan/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168026/image63_cxlqsm.webp"
+      },
+      {
+        "public_id": "image64_gqpoz1",
+        "asset_folder": "gastro/lactipan/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168028/image64_gqpoz1.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image60_ngmeho",
+        "asset_folder": "gastro/lactipan/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168015/image60_ngmeho.jpg"
+      },
+      {
+        "public_id": "image61_zv3d6m",
+        "asset_folder": "gastro/lactipan/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168014/image61_zv3d6m.jpg"
+      },
+      {
+        "public_id": "image62_odms65",
+        "asset_folder": "gastro/lactipan/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168017/image62_odms65.jpg"
+      },
+      {
+        "public_id": "image63_lwwahm",
+        "asset_folder": "gastro/lactipan/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168018/image63_lwwahm.jpg"
+      },
+      {
+        "public_id": "image64_zfsrs2",
+        "asset_folder": "gastro/lactipan/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168020/image64_zfsrs2.jpg"
+      }
+    ]
+  },
+  "kirruiz": {
+    "tablet-webp": [
+      {
+        "public_id": "image39_lvq5jr",
+        "asset_folder": "gastro/kirruiz/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168006/image39_lvq5jr.webp"
+      },
+      {
+        "public_id": "image40_ye9gzj",
+        "asset_folder": "gastro/kirruiz/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168007/image40_ye9gzj.webp"
+      },
+      {
+        "public_id": "image41_rwkvan",
+        "asset_folder": "gastro/kirruiz/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168009/image41_rwkvan.webp"
+      },
+      {
+        "public_id": "image42_posoof",
+        "asset_folder": "gastro/kirruiz/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168011/image42_posoof.webp"
+      },
+      {
+        "public_id": "image43_ik3oqi",
+        "asset_folder": "gastro/kirruiz/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168012/image43_ik3oqi.webp"
+      },
+      {
+        "public_id": "image183_bip8gp",
+        "asset_folder": "gastro/kirruiz/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168005/image183_bip8gp.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image39_v9t8hl",
+        "asset_folder": "gastro/kirruiz/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167997/image39_v9t8hl.jpg"
+      },
+      {
+        "public_id": "image40_j2gt62",
+        "asset_folder": "gastro/kirruiz/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167998/image40_j2gt62.jpg"
+      },
+      {
+        "public_id": "image41_irmewm",
+        "asset_folder": "gastro/kirruiz/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168000/image41_irmewm.jpg"
+      },
+      {
+        "public_id": "image42_lw5mxn",
+        "asset_folder": "gastro/kirruiz/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168001/image42_lw5mxn.jpg"
+      },
+      {
+        "public_id": "image43_qyrhp9",
+        "asset_folder": "gastro/kirruiz/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730168003/image43_qyrhp9.jpg"
+      },
+      {
+        "public_id": "image183_j0g1zh",
+        "asset_folder": "gastro/kirruiz/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167995/image183_j0g1zh.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image39_zcur0g",
+        "asset_folder": "gastro/kirruiz/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167988/image39_zcur0g.webp"
+      },
+      {
+        "public_id": "image40_uwj6dp",
+        "asset_folder": "gastro/kirruiz/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167989/image40_uwj6dp.webp"
+      },
+      {
+        "public_id": "image41_wjey0k",
+        "asset_folder": "gastro/kirruiz/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167991/image41_wjey0k.webp"
+      },
+      {
+        "public_id": "image42_gyozw5",
+        "asset_folder": "gastro/kirruiz/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167992/image42_gyozw5.webp"
+      },
+      {
+        "public_id": "image43_c3abie",
+        "asset_folder": "gastro/kirruiz/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167994/image43_c3abie.webp"
+      },
+      {
+        "public_id": "image183_gxcydp",
+        "asset_folder": "gastro/kirruiz/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167986/image183_gxcydp.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image39_bnzzud",
+        "asset_folder": "gastro/kirruiz/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167978/image39_bnzzud.jpg"
+      },
+      {
+        "public_id": "image40_fvati6",
+        "asset_folder": "gastro/kirruiz/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167980/image40_fvati6.jpg"
+      },
+      {
+        "public_id": "image41_o83uhs",
+        "asset_folder": "gastro/kirruiz/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167982/image41_o83uhs.jpg"
+      },
+      {
+        "public_id": "image42_dobaqd",
+        "asset_folder": "gastro/kirruiz/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167983/image42_dobaqd.jpg"
+      },
+      {
+        "public_id": "image43_pdfev3",
+        "asset_folder": "gastro/kirruiz/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167985/image43_pdfev3.jpg"
+      },
+      {
+        "public_id": "image183_fjkczw",
+        "asset_folder": "gastro/kirruiz/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167977/image183_fjkczw.jpg"
+      }
+    ]
+  },
+  "glutapak": {
+    "tablet-webp": [
+      {
+        "public_id": "image65_d7mbij",
+        "asset_folder": "gastro/glutapak/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167966/image65_d7mbij.webp"
+      },
+      {
+        "public_id": "image66_gg9gem",
+        "asset_folder": "gastro/glutapak/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167968/image66_gg9gem.webp"
+      },
+      {
+        "public_id": "image67_plpdhq",
+        "asset_folder": "gastro/glutapak/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167969/image67_plpdhq.webp"
+      },
+      {
+        "public_id": "image68_jdwiux",
+        "asset_folder": "gastro/glutapak/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167971/image68_jdwiux.webp"
+      },
+      {
+        "public_id": "image69_briwo8",
+        "asset_folder": "gastro/glutapak/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167972/image69_briwo8.webp"
+      },
+      {
+        "public_id": "image70_zcbxpx",
+        "asset_folder": "gastro/glutapak/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167974/image70_zcbxpx.webp"
+      },
+      {
+        "public_id": "image71_nuzdrd",
+        "asset_folder": "gastro/glutapak/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167976/image71_nuzdrd.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image65_x0xvtt",
+        "asset_folder": "gastro/glutapak/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167956/image65_x0xvtt.jpg"
+      },
+      {
+        "public_id": "image66_ywgvh8",
+        "asset_folder": "gastro/glutapak/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167957/image66_ywgvh8.jpg"
+      },
+      {
+        "public_id": "image67_pf1ulu",
+        "asset_folder": "gastro/glutapak/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167959/image67_pf1ulu.jpg"
+      },
+      {
+        "public_id": "image68_vorp9d",
+        "asset_folder": "gastro/glutapak/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167960/image68_vorp9d.jpg"
+      },
+      {
+        "public_id": "image69_rmubbl",
+        "asset_folder": "gastro/glutapak/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167962/image69_rmubbl.jpg"
+      },
+      {
+        "public_id": "image70_g1simb",
+        "asset_folder": "gastro/glutapak/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167963/image70_g1simb.jpg"
+      },
+      {
+        "public_id": "image71_nu9at8",
+        "asset_folder": "gastro/glutapak/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167965/image71_nu9at8.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image65_twvitv",
+        "asset_folder": "gastro/glutapak/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167925/image65_twvitv.webp"
+      },
+      {
+        "public_id": "image66_qzca5b",
+        "asset_folder": "gastro/glutapak/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167928/image66_qzca5b.webp"
+      },
+      {
+        "public_id": "image67_pdu9xu",
+        "asset_folder": "gastro/glutapak/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167930/image67_pdu9xu.webp"
+      },
+      {
+        "public_id": "image68_ua2pqn",
+        "asset_folder": "gastro/glutapak/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167931/image68_ua2pqn.webp"
+      },
+      {
+        "public_id": "image69_fxoook",
+        "asset_folder": "gastro/glutapak/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167934/image69_fxoook.webp"
+      },
+      {
+        "public_id": "image70_m5cxhq",
+        "asset_folder": "gastro/glutapak/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167942/image70_m5cxhq.webp"
+      },
+      {
+        "public_id": "image71_kqtym2",
+        "asset_folder": "gastro/glutapak/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167943/image71_kqtym2.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image65_mt6jg0",
+        "asset_folder": "gastro/glutapak/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167945/image65_mt6jg0.jpg"
+      },
+      {
+        "public_id": "image66_ca5qfi",
+        "asset_folder": "gastro/glutapak/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167947/image66_ca5qfi.jpg"
+      },
+      {
+        "public_id": "image67_jo3qrn",
+        "asset_folder": "gastro/glutapak/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167948/image67_jo3qrn.jpg"
+      },
+      {
+        "public_id": "image68_vfbqhh",
+        "asset_folder": "gastro/glutapak/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167950/image68_vfbqhh.jpg"
+      },
+      {
+        "public_id": "image69_hk44yl",
+        "asset_folder": "gastro/glutapak/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167951/image69_hk44yl.jpg"
+      },
+      {
+        "public_id": "image70_a5emg1",
+        "asset_folder": "gastro/glutapak/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167954/image70_a5emg1.jpg"
+      },
+      {
+        "public_id": "image71_ktjaxx",
+        "asset_folder": "gastro/glutapak/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167953/image71_ktjaxx.jpg"
+      }
+    ]
+  },
+  "enterex": {
+    "tablet-webp": [
+      {
+        "public_id": "image53_m2g1ld",
+        "asset_folder": "gastro/enterex/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167889/image53_m2g1ld.webp"
+      },
+      {
+        "public_id": "image54_hjfvkl",
+        "asset_folder": "gastro/enterex/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167891/image54_hjfvkl.webp"
+      },
+      {
+        "public_id": "image55_qfgz92",
+        "asset_folder": "gastro/enterex/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167915/image55_qfgz92.webp"
+      },
+      {
+        "public_id": "image56_xobxrd",
+        "asset_folder": "gastro/enterex/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167916/image56_xobxrd.webp"
+      },
+      {
+        "public_id": "image57_ppfash",
+        "asset_folder": "gastro/enterex/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167918/image57_ppfash.webp"
+      },
+      {
+        "public_id": "image58_l34yba",
+        "asset_folder": "gastro/enterex/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167919/image58_l34yba.webp"
+      },
+      {
+        "public_id": "image59_lyzykh",
+        "asset_folder": "gastro/enterex/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167921/image59_lyzykh.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image53_gq1mnz",
+        "asset_folder": "gastro/enterex/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167905/image53_gq1mnz.jpg"
+      },
+      {
+        "public_id": "image54_k1afdk",
+        "asset_folder": "gastro/enterex/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167907/image54_k1afdk.jpg"
+      },
+      {
+        "public_id": "image55_upsnqm",
+        "asset_folder": "gastro/enterex/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167922/image55_upsnqm.jpg"
+      },
+      {
+        "public_id": "image56_wsrmpn",
+        "asset_folder": "gastro/enterex/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167924/image56_wsrmpn.jpg"
+      },
+      {
+        "public_id": "image57_lzoljg",
+        "asset_folder": "gastro/enterex/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167927/image57_lzoljg.jpg"
+      },
+      {
+        "public_id": "image58_ulqwqd",
+        "asset_folder": "gastro/enterex/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167908/image58_ulqwqd.jpg"
+      },
+      {
+        "public_id": "image59_s1nmpl",
+        "asset_folder": "gastro/enterex/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167910/image59_s1nmpl.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image53_ebkhtb",
+        "asset_folder": "gastro/enterex/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167894/image53_ebkhtb.webp"
+      },
+      {
+        "public_id": "image54_cdpjgl",
+        "asset_folder": "gastro/enterex/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167896/image54_cdpjgl.webp"
+      },
+      {
+        "public_id": "image55_eux29q",
+        "asset_folder": "gastro/enterex/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167897/image55_eux29q.webp"
+      },
+      {
+        "public_id": "image56_kkcr03",
+        "asset_folder": "gastro/enterex/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167899/image56_kkcr03.webp"
+      },
+      {
+        "public_id": "image57_mt08il",
+        "asset_folder": "gastro/enterex/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167900/image57_mt08il.webp"
+      },
+      {
+        "public_id": "image58_aont4q",
+        "asset_folder": "gastro/enterex/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167902/image58_aont4q.webp"
+      },
+      {
+        "public_id": "image59_xkw5qc",
+        "asset_folder": "gastro/enterex/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167904/image59_xkw5qc.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image53_yjorz9",
+        "asset_folder": "gastro/enterex/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167911/image53_yjorz9.jpg"
+      },
+      {
+        "public_id": "image54_yswdwt",
+        "asset_folder": "gastro/enterex/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167913/image54_yswdwt.jpg"
+      },
+      {
+        "public_id": "image55_nttiju",
+        "asset_folder": "gastro/enterex/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167933/image55_nttiju.jpg"
+      },
+      {
+        "public_id": "image56_cbvciq",
+        "asset_folder": "gastro/enterex/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167936/image56_cbvciq.jpg"
+      },
+      {
+        "public_id": "image57_hvp4hx",
+        "asset_folder": "gastro/enterex/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167938/image57_hvp4hx.jpg"
+      },
+      {
+        "public_id": "image58_qirvwy",
+        "asset_folder": "gastro/enterex/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167939/image58_qirvwy.jpg"
+      },
+      {
+        "public_id": "image59_wqodwq",
+        "asset_folder": "gastro/enterex/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167941/image59_wqodwq.jpg"
+      }
+    ]
+  },
+  "dexgstrol": {
+    "tablet-webp": [
+      {
+        "public_id": "image8_coceo9",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167858/image8_coceo9.webp"
+      },
+      {
+        "public_id": "image9_brllza",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167861/image9_brllza.webp"
+      },
+      {
+        "public_id": "image10_ysgcc6",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167851/image10_ysgcc6.webp"
+      },
+      {
+        "public_id": "image11_oqzqke",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167883/image11_oqzqke.webp"
+      },
+      {
+        "public_id": "image12_xois3u",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167885/image12_xois3u.webp"
+      },
+      {
+        "public_id": "image13_mm0lnr",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167853/image13_mm0lnr.webp"
+      },
+      {
+        "public_id": "image14_gksxfd",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167854/image14_gksxfd.webp"
+      },
+      {
+        "public_id": "image15_atlepx",
+        "asset_folder": "gastro/dexgstrol/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167888/image15_atlepx.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image8_ugjtuo",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167879/image8_ugjtuo.jpg"
+      },
+      {
+        "public_id": "image9_skovbh",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167882/image9_skovbh.jpg"
+      },
+      {
+        "public_id": "image10_hp8dwm",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167859/image10_hp8dwm.jpg"
+      },
+      {
+        "public_id": "image11_k570mr",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167862/image11_k570mr.jpg"
+      },
+      {
+        "public_id": "image12_v2z6qx",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167864/image12_v2z6qx.jpg"
+      },
+      {
+        "public_id": "image13_kr05o0",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167873/image13_kr05o0.jpg"
+      },
+      {
+        "public_id": "image14_akpwby",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167875/image14_akpwby.jpg"
+      },
+      {
+        "public_id": "image15_d7xxlo",
+        "asset_folder": "gastro/dexgstrol/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167893/image15_d7xxlo.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image8_phojma",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167856/image8_phojma.webp"
+      },
+      {
+        "public_id": "image9_twtt3m",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167850/image9_twtt3m.webp"
+      },
+      {
+        "public_id": "image10_fuk592",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167840/image10_fuk592.webp"
+      },
+      {
+        "public_id": "image11_kruekl",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167843/image11_kruekl.webp"
+      },
+      {
+        "public_id": "image12_h2hvxi",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167842/image12_h2hvxi.webp"
+      },
+      {
+        "public_id": "image13_x2rnb7",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167845/image13_x2rnb7.webp"
+      },
+      {
+        "public_id": "image14_j48gjd",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167846/image14_j48gjd.webp"
+      },
+      {
+        "public_id": "image15_olqtgh",
+        "asset_folder": "gastro/dexgstrol/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167848/image15_olqtgh.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image8_mmcib8",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167866/image8_mmcib8.jpg"
+      },
+      {
+        "public_id": "image9_spwejj",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167877/image9_spwejj.jpg"
+      },
+      {
+        "public_id": "image10_ahpip7",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167834/image10_ahpip7.jpg"
+      },
+      {
+        "public_id": "image11_fxvscz",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167833/image11_fxvscz.jpg"
+      },
+      {
+        "public_id": "image12_tyxmz9",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167836/image12_tyxmz9.jpg"
+      },
+      {
+        "public_id": "image13_rosxyz",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167837/image13_rosxyz.jpg"
+      },
+      {
+        "public_id": "image14_mm8r47",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167839/image14_mm8r47.jpg"
+      },
+      {
+        "public_id": "image15_pnkwq8",
+        "asset_folder": "gastro/dexgstrol/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167886/image15_pnkwq8.jpg"
+      }
+    ]
+  },
+  "combispas": {
+    "tablet-webp": [
+      {
+        "public_id": "image34_udupfq",
+        "asset_folder": "gastro/combispas/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167820/image34_udupfq.webp"
+      },
+      {
+        "public_id": "image35_tiz0ko",
+        "asset_folder": "gastro/combispas/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167825/image35_tiz0ko.webp"
+      },
+      {
+        "public_id": "image36_eh9frm",
+        "asset_folder": "gastro/combispas/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167829/image36_eh9frm.webp"
+      },
+      {
+        "public_id": "image37_iget34",
+        "asset_folder": "gastro/combispas/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167827/image37_iget34.webp"
+      },
+      {
+        "public_id": "image38_weylqv",
+        "asset_folder": "gastro/combispas/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167830/image38_weylqv.webp"
+      },
+      {
+        "public_id": "image181_qmf6oa",
+        "asset_folder": "gastro/combispas/tablet/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167818/image181_qmf6oa.webp"
+      }
+    ],
+    "tablet-jpg": [
+      {
+        "public_id": "image34_u9yyde",
+        "asset_folder": "gastro/combispas/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167809/image34_u9yyde.jpg"
+      },
+      {
+        "public_id": "image35_caf07h",
+        "asset_folder": "gastro/combispas/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167811/image35_caf07h.jpg"
+      },
+      {
+        "public_id": "image36_dthkny",
+        "asset_folder": "gastro/combispas/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167813/image36_dthkny.jpg"
+      },
+      {
+        "public_id": "image37_mex2kb",
+        "asset_folder": "gastro/combispas/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167815/image37_mex2kb.jpg"
+      },
+      {
+        "public_id": "image38_tk15aj",
+        "asset_folder": "gastro/combispas/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167817/image38_tk15aj.jpg"
+      },
+      {
+        "public_id": "image181_htqe2v",
+        "asset_folder": "gastro/combispas/tablet/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167808/image181_htqe2v.jpg"
+      }
+    ],
+    "desktop-webp": [
+      {
+        "public_id": "image34_qhonq4",
+        "asset_folder": "gastro/combispas/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167801/image34_qhonq4.webp"
+      },
+      {
+        "public_id": "image35_f5ju0w",
+        "asset_folder": "gastro/combispas/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167803/image35_f5ju0w.webp"
+      },
+      {
+        "public_id": "image36_wnpbyh",
+        "asset_folder": "gastro/combispas/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167804/image36_wnpbyh.webp"
+      },
+      {
+        "public_id": "image37_roaz8z",
+        "asset_folder": "gastro/combispas/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167805/image37_roaz8z.webp"
+      },
+      {
+        "public_id": "image38_xjuvpe",
+        "asset_folder": "gastro/combispas/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167807/image38_xjuvpe.webp"
+      },
+      {
+        "public_id": "image181_ft8cod",
+        "asset_folder": "gastro/combispas/desktop/webp",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167800/image181_ft8cod.webp"
+      }
+    ],
+    "desktop-jpg": [
+      {
+        "public_id": "image34_cxz3hi",
+        "asset_folder": "gastro/combispas/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167793/image34_cxz3hi.jpg"
+      },
+      {
+        "public_id": "image35_qho4jh",
+        "asset_folder": "gastro/combispas/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167794/image35_qho4jh.jpg"
+      },
+      {
+        "public_id": "image36_mgwbsi",
+        "asset_folder": "gastro/combispas/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167796/image36_mgwbsi.jpg"
+      },
+      {
+        "public_id": "image37_kzmjid",
+        "asset_folder": "gastro/combispas/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167797/image37_kzmjid.jpg"
+      },
+      {
+        "public_id": "image38_sk2ugj",
+        "asset_folder": "gastro/combispas/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167798/image38_sk2ugj.jpg"
+      },
+      {
+        "public_id": "image181_euqutw",
+        "asset_folder": "gastro/combispas/desktop/jpg",
+        "secure_url": "https://res.cloudinary.com/djj2wobjt/image/upload/v1730167792/image181_euqutw.jpg"
+      }
+    ]
+  }
+}
