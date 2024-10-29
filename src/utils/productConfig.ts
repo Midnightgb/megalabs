@@ -32,7 +32,7 @@ export type ProductName = keyof typeof productRanges;
 export type ProductLine = 'gastro' | 'dolor' | 'gineco - urologia' | 'pediatria - respiratoria' | 'dermatologia' | 'hidrisage' | 'oftamologia' | 'medicina general';
 
 function getImagePath(line: string, product: string, type: string, number: number) {
-  const imageName = `BOOK GAS 0924-2_page78_image${number}`;
+  const imageName = `image${number}`;
   return `/assets/img/${imageName}.jpg`;
 }
 
