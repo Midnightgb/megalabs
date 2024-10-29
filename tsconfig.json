@@ -15,8 +15,22 @@
     "paths": {
       "@/*": ["./src/*"],
       "@gastro-*": ["./src/assets/img/gastro/*"]
-    }
+    },
+    "allowJs": true,
+    "declaration": false,  // Añade esta línea
+    "emitDeclarationOnly": false  // Añade esta línea
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  "exclude": [  // Añade esta sección
+    "node_modules",
+    "dist",
+    "ios",
+    "android"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
