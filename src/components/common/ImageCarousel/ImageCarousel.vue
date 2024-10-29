@@ -20,13 +20,8 @@
             :type="source.type"
             @error="handleSourceError(source, index, sourceIndex)"
           />
-          <source 
-            :srcset="slide.image.srcset" 
-            type="image/webp"
-            @error="handleWebPError(slide, index)" 
-          />
           <img 
-            :src="slide.image.fallback" 
+            :src="slide.image.src" 
             :alt="slide.title || ''"
             class="absolute top-0 left-0 w-full h-full object-contain"
             @load="handleImageLoad(slide, index)"
@@ -68,22 +63,16 @@ const handleSourceError = (source: any, slideIndex: number, sourceIndex: number)
   });
 };
 
-const handleWebPError = (slide: any, index: number) => {
-  console.error(`[Carousel] WebP format loading error for slide ${index}:`, {
-    srcset: slide.image.srcset
-  });
-};
-
 const handleImageLoad = (slide: any, index: number) => {
   console.log(`[Carousel] Successfully loaded image for slide ${index}:`, {
-    src: slide.image.fallback,
+    src: slide.image.src,
     title: slide.title
   });
 };
 
 const handleImageError = (slide: any, index: number) => {
-  console.error(`[Carousel] Fallback image loading error for slide ${index}:`, {
-    src: slide.image.fallback,
+  console.error(`[Carousel] Image loading error for slide ${index}:`, {
+    src: slide.image.src,
     title: slide.title
   });
 };
